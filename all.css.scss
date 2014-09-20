@@ -1,31 +1,13 @@
 @charset "utf-8";
+@import 'compass';
+
 @-ms-viewport {width: device-width;}
     @viewport {width: device-width;}
 
-@import 'compass';
+//
+// Normalization & resets for annoyances
+
 @import "normalize";
-
-//
-// Em conversion functions
-// pixels to ems & baselines to ems
-
-$font-size: 16;
-$line-height: 24;
-
-@function em($pixels, $context-font-size: $font-size) {
- @return ($pixels / $context-font-size) * 1em;
-}
-
-@function lines($lines, $context-font-size: $font-size,  $context-line-height: $line-height) {
-  @return $lines * ($context-line-height / $context-font-size) * 1em;
-}
-
-@function rem($factor, $context-font-size: $font-size) {
- @return ($factor * $context-font-size) / $context-font-size * 1em;
-}
-
-//
-// Resetting annoying things
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,9 +41,28 @@ input, textarea, button, select {
 textarea { resize: vertical; }
 
 //
+// Em conversion functions
+// pixels to ems & baselines to ems
+
+$font-size: 16;
+$line-height: 24;
+
+@function em($pixels, $context-font-size: $font-size) {
+ @return ($pixels / $context-font-size) * 1em;
+}
+
+@function lines($lines, $context-font-size: $font-size,  $context-line-height: $line-height) {
+  @return $lines * ($context-line-height / $context-font-size) * 1em;
+}
+
+@function rem($factor, $context-font-size: $font-size) {
+ @return ($factor * $context-font-size) / $context-font-size * 1em;
+}
+
+//
 // Variables
 
-
+$max-width: lines(40);
 
 //
 // Typography
@@ -139,6 +140,8 @@ body {
   background: $background;
   color: $body;
   -webkit-tap-highlight-color: transparentize($link, 0.5);
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 a {
