@@ -135,7 +135,7 @@ $xxxxxxl:  "screen and (min-width: 2000px)";
 body {
   @include text-font;
   font-size: em($font-size, 16);
-  line-height: lines(1);
+  line-height: $line-height/$font-size;
   background: $background;
   color: $body;
   -webkit-tap-highlight-color: transparentize($link, 0.5);
