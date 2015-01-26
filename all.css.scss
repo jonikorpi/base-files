@@ -69,7 +69,7 @@ $max-width: lines(40);
 
 @mixin text-font      { font-family: serif; }
 @mixin heading-font  	{ font-family: sans-serif; }
-@mixin monospace-font { font-family: Menlo, Consolas, monospace; }
+@mixin monospace-font { font-family: Menlo, Consolas, monospace, monospace; }
 
 //
 // Colors
