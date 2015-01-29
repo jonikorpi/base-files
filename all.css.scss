@@ -9,13 +9,9 @@
 
 @import "normalize";
 
-*,
-h1,
-fieldset,
-figure {
+html * {
   margin: 0;
   padding: 0;
-  border-width: 0;
   font-size: 1em;
   font-family: inherit;
   line-height: inherit;
