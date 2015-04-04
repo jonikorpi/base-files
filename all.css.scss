@@ -93,19 +93,21 @@ $link: hsl($hue-618, 85.4%, 61.8%);
 //
 // Media queries
 
-$xxs:      "screen and (max-width: 317px)";
-$xs:       "screen and (min-width: 318px)";
-$s:        "screen and (min-width: 478px)";
+$xs2: "screen and (max-width:  317px)";
+$xs:  "screen and (min-width:  318px)";
+$s:   "screen and (min-width:  478px)";
 
-$m:        "screen and (min-width: 560px)";
+$m:   "screen and (min-width:  560px)";
 
-$l:        "screen and (min-width: 780px)";
-$xl:       "screen and (min-width: 960px)";
-$xxl:      "screen and (min-width: 1100px)";
-$xxxl:     "screen and (min-width: 1200px)";
-$xxxxl:    "screen and (min-width: 1400px)";
-$xxxxxl:   "screen and (min-width: 1700px)";
-$xxxxxxl:  "screen and (min-width: 2000px)";
+$l:   "screen and (min-width:  780px)";
+$xl:  "screen and (min-width:  960px)";
+$xl2: "screen and (min-width: 1100px)";
+$xl3: "screen and (min-width: 1200px)";
+$xl4: "screen and (min-width: 1400px)";
+$xl5: "screen and (min-width: 1700px)";
+$xl6: "screen and (min-width: 2500px)";
+
+$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 
 //
