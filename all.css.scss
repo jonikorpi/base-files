@@ -15,6 +15,7 @@ html * {
   font-family: inherit;
   line-height: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 textarea { resize: vertical; }
