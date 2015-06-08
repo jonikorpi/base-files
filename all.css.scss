@@ -134,20 +134,8 @@ code, pre {
 /////////////////////////////////////////////////////////
 
 html {
-  font-size: 100%   * $font-size-multiplier;
-  font-size: 6.25vw * $font-size-multiplier;
+  font-size: 100% * $font-size-multiplier;
   line-height: $line;
-
-  @media (min-width: $xs)  { font-size: 5vw * $font-size-multiplier; }
-  @media (min-width: $s)   { font-size: 3.25vw * $font-size-multiplier; }
-  @media (min-width: $m)   { font-size: 3vw    * $font-size-multiplier; }
-  @media (min-width: $l)   { font-size: 2.25vw * $font-size-multiplier; }
-  @media (min-width: $xl)  { font-size: 1.75vw * $font-size-multiplier; }
-  @media (min-width: $xl2) { font-size: 1.5vw  * $font-size-multiplier; }
-  @media (min-width: $xl4) { font-size: 1.25vw * $font-size-multiplier; }
-  @media (min-width: $xl5) { font-size: 1vw    * $font-size-multiplier; }
-  @media (min-width: $xl7) { font-size: 0.8vw  * $font-size-multiplier; }
-
   background: hsl($hue-golden-high, 38.2%, 9%);
   color: hsl($hue, 14.6%, 61.8%);
   -webkit-tap-highlight-color: hsla($hue-golden-low, 100%, 61.8%, 0.5);
