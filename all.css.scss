@@ -40,29 +40,22 @@ $in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);
 
 $hue: 45;
 
-$hue-xxxxx-high: $hue + (360 * 0.979);
-$hue-xxxx-high: $hue + (360 * 0.965);
-$hue-xxx-high: $hue + (360 * 0.944);
-$hue-xx-high: $hue + (360 * 0.91);
-$hue-x-high: $hue + (360 * 0.854);
-$hue-high:  $hue + (360 * 0.764);
+$hue: 45;
+$hue-increment: 1.618;
 
-$hue-quarter-high: $hue + (360 * 0.75);
-$hue-golden-high:  $hue + (360 * 0.618);
-$hue-sqrt-high:    $hue + (360 * 0.586);
-
-$hue-opposite:     $hue + (360 * 0.5);
-
-$hue-sqrt-low:     $hue + (360 * 0.414);
-$hue-golden-low:   $hue + (360 * 0.382);
-$hue-quarter-low:  $hue + (360 * 0.25);
-
-$hue-low:   $hue + (360 * 0.236);
-$hue-x-low:  $hue + (360 * 0.146);
-$hue-xx-low:  $hue + (360 * 0.09);
-$hue-xxx-low:  $hue + (360 * 0.056);
-$hue-xxxx-low:  $hue + (360 * 0.034);
-$hue-xxxxx-low:  $hue + (360 * 0.021);
+$hue-1:  $hue + (360/$hue-increment) *  1;
+$hue-2:  $hue + (360/$hue-increment) *  2;
+$hue-3:  $hue + (360/$hue-increment) *  3;
+$hue-4:  $hue + (360/$hue-increment) *  4;
+$hue-5:  $hue + (360/$hue-increment) *  5;
+$hue-6:  $hue + (360/$hue-increment) *  6;
+$hue-7:  $hue + (360/$hue-increment) *  7;
+$hue-8:  $hue + (360/$hue-increment) *  8;
+$hue-9:  $hue + (360/$hue-increment) *  9;
+$hue-10: $hue + (360/$hue-increment) * 10;
+$hue-11: $hue + (360/$hue-increment) * 11;
+$hue-12: $hue + (360/$hue-increment) * 12;
+$hue-13: $hue + (360/$hue-increment) * 13;
 
 /////////////////////////////////////////////////////////
 // Media queries
@@ -248,9 +241,9 @@ code, pre {
 html {
   font-size: 100% * $font-size-multiplier;
   line-height: $line;
-  background: hsl($hue-golden-high, 38.2%, 9%);
+  background: hsl($hue-1, 38.2%, 9%);
   color: hsl($hue, 14.6%, 61.8%);
-  -webkit-tap-highlight-color: hsla($hue-golden-low, 100%, 61.8%, 0.5);
+  -webkit-tap-highlight-color: hsla($hue-1, 100%, 61.8%, 0.5);
 }
 
 body {
@@ -260,15 +253,15 @@ body {
 }
 
 a {
-  color: hsl($hue-opposite, 85.4%, 61.8%);
+  color: hsl($hue-2, 85.4%, 61.8%);
   text-decoration: none;
 
   &:hover {
-    color: hsl($hue-quarter-high, 85.4%, 61.8%);
+    color: hsl($hue-3, 85.4%, 61.8%);
   }
 
   &:active {
-    color: hsl($hue-quarter-low, 85.4%, 61.8%);
+    color: hsl($hue-4, 85.4%, 61.8%);
   }
 }
 
@@ -278,15 +271,15 @@ strong, b {
 }
 
 hr {
-  border-color: hsl($hue-golden-high, 9%, 23.6%);
+  border-color: hsl($hue-1, 9%, 23.6%);
 }
 
 code {
-  color: hsl($hue-golden-high, 14.6%, 61.8%);
+  color: hsl($hue-1, 14.6%, 61.8%);
 }
 
 ::selection {
-  background: hsl($hue-opposite, 91%, 61.8%);
+  background: hsl($hue-2, 91%, 61.8%);
 }
 
 ::placeholder {
