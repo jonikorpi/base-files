@@ -1,44 +1,42 @@
 @charset "utf-8";
 @viewport {width: device-width;}
 
-/////////////////////////////////////////////////////////
+//
 // General variables
-/////////////////////////////////////////////////////////
 
-$font-size-multiplier: 1;
+$font-size-multiplier: 16/16;
 $line: 1.382rem;
-$max-width: $line * 30;
+$narrower-word-spacing: -0.236em;
+$max-width: $line * 28;
 
-$in-quad:      cubic-bezier(0.550,  0.085, 0.680, 0.530);
-$in-cubic:     cubic-bezier(0.550,  0.055, 0.675, 0.190);
-$in-quart:     cubic-bezier(0.895,  0.030, 0.685, 0.220);
-$in-quint:     cubic-bezier(0.755,  0.050, 0.855, 0.060);
-$in-sine:      cubic-bezier(0.470,  0.000, 0.745, 0.715);
-$in-expo:      cubic-bezier(0.950,  0.050, 0.795, 0.035);
-$in-circ:      cubic-bezier(0.600,  0.040, 0.980, 0.335);
-$in-back:      cubic-bezier(0.600, -0.280, 0.735, 0.045);
-$out-quad:     cubic-bezier(0.250,  0.460, 0.450, 0.940);
-$out-cubic:    cubic-bezier(0.215,  0.610, 0.355, 1.000);
-$out-quart:    cubic-bezier(0.165,  0.840, 0.440, 1.000);
-$out-quint:    cubic-bezier(0.230,  1.000, 0.320, 1.000);
-$out-sine:     cubic-bezier(0.390,  0.575, 0.565, 1.000);
-$out-expo:     cubic-bezier(0.190,  1.000, 0.220, 1.000);
-$out-circ:     cubic-bezier(0.075,  0.820, 0.165, 1.000);
-$out-back:     cubic-bezier(0.175,  0.885, 0.320, 1.275);
-$in-out-quad:  cubic-bezier(0.455,  0.030, 0.515, 0.955);
-$in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
-$in-out-quart: cubic-bezier(0.770,  0.000, 0.175, 1.000);
-$in-out-quint: cubic-bezier(0.860,  0.000, 0.070, 1.000);
-$in-out-sine:  cubic-bezier(0.445,  0.050, 0.550, 0.950);
-$in-out-expo:  cubic-bezier(1.000,  0.000, 0.000, 1.000);
-$in-out-circ:  cubic-bezier(0.785,  0.135, 0.150, 0.860);
-$in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);
+$masthead-height: 14.6%;
+$new-height:      30%;
+$new-height-s:    20%;
+$tags-height:     100% - $masthead-height - $new-height;
+$tags-height-s:   100% - $masthead-height - $new-height-s;
 
-/////////////////////////////////////////////////////////
-// Hues
-/////////////////////////////////////////////////////////
+$edge-gap: $line * 0.5;
 
-$hue: 45;
+$card-padding: 3.4%;
+$card-border-width: 3px;
+$card-border-width-visited: $card-border-width;
+$card-border-radius: $card-border-width;
+
+$card-zoom: 0.944;
+$card-zoom-more: 1.0;
+
+$zoom-out-size: $line*2;
+
+$main-easing:        cubic-bezier(0.236, 0.000, 0.236, 1.000);
+$reverse-easing:     cubic-bezier(0.618, 0.000, 0.236, 1.000);
+$loop-easing:        ease-in-out;
+
+$main-time: 200ms;
+$short-time: 124ms;
+$loop-time: 6000ms;
+
+//
+// Colors
 
 $hue: 45;
 $hue-increment: 1.618;
@@ -57,9 +55,35 @@ $hue-11: $hue + (360/$hue-increment) * 11;
 $hue-12: $hue + (360/$hue-increment) * 12;
 $hue-13: $hue + (360/$hue-increment) * 13;
 
-/////////////////////////////////////////////////////////
+$background:      hsl($hue-1, 50%, 23.6%);
+$off-background:  hsl($hue-1, 50%, 14.6%);
+$card-background: hsl($hue-1, 50%, 9%);
+
+$bright: hsl($hue, 23.6%, 76.4%);
+$body:   hsl($hue, 5.6%, 61.8%);
+$dim:    hsl($hue, 3.4%, 50%);
+
+$purple-bright: hsl($hue-1, 23.6%, 76.4%);
+$purple-body:   hsl($hue-1, 14.6%, 61.8%);
+$purple-dim:    hsl($hue-1, 9%, 50%);
+
+$yellow: hsl($hue,   50%, 61.8%);
+$orange: hsl($hue-8, 50%, 50%);
+$red:    hsl($hue-3, 38.2%, 50.0%);
+$blue:   hsl($hue-4, 50%, 60%);
+$cyan:   hsl($hue-7, 38.2%, 50.0%);
+$green:  hsl($hue-2, 23.6%, 50.0%);
+$purple: hsl($hue-1, 50.0%, 66.6%);
+
+$shadow:      hsl($hue-1, 50%, 5.6%);
+$border:      hsl($hue-1, 9%, 41.4%);
+
+$highlight: hsl($hue, 76.4%, 61.8%);
+$purple-highlight: hsl($hue-1, 38.2%, 50%);
+$blue-highlight: hsl($hue-4, 91%, 66.6%);
+
+//
 // Media queries
-/////////////////////////////////////////////////////////
 
 $xs2:  "#{317 / 16 * 1em}";
 $xs:   "#{318 / 16 * 1em}";
@@ -76,167 +100,20 @@ $xl7: "#{2300 / 16 * 1em}";
 
 $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
-/////////////////////////////////////////////////////////
-// Normalization & resets for annoyances
-/////////////////////////////////////////////////////////
+//
+// Imports
 
-// Resets annoying things
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  color: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-  text-size-adjust: 100%;
-}
+@import "reset";
 
-// Owl selector spacing
-* + * {
-  margin-top: $line;
-}
-
-li {
-  margin-top: 0;
-}
-
-ul ul, ul ol, ol ol, ol ul {
-  margin-top: 0;
-  padding-left: $line;
-}
-
-// HTML5 element fixes
-article, aside, details,
-figcaption, figure, footer,
-header, hgroup,
-main, menu, nav,
-section, summary,
-video, audio, canvas {
-  display: block;
-}
-
-// Hides things that should be hidden
-[hidden],
-template,
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-// Misc element fixes
-a {
-  background-color: transparent;
-}
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-}
-
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-hr {
-  height: 0;
-}
-
-// Image fixes
-img {
-  border: none;
-  display: block;
-}
-
-// Buttons and forms
-button {
-  overflow: visible;
-  cursor: pointer;
-}
-
-button[type="button"] {
-  appearance: none;
-  background: none;
-}
-
-[disabled] {
-  cursor: not-allowed !important;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
-// Tables
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
-/////////////////////////////////////////////////////////
-// Touchable things (used in addition to FastClick)
-/////////////////////////////////////////////////////////
-
-a,
-button,
-input,
-textarea,
-.touchable {
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-}
-
-/////////////////////////////////////////////////////////
+//
 // Font families
-/////////////////////////////////////////////////////////
 
-.text,
 html {
   font-family: serif;
 }
 
-.heading,
-h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-}
-
-.monospace,
-code, pre {
-  font-family: Menlo, Consolas, monospace, monospace;
-}
-
-/////////////////////////////////////////////////////////
+//
 // Basic styles
-/////////////////////////////////////////////////////////
 
 html {
   font-size: 100% * $font-size-multiplier;
