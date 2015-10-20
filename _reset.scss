@@ -14,18 +14,15 @@
 }
 
 // Owl selector spacing
-* + * {
+.margins * + * {
   margin-top: $line;
 }
 
-.no-margins,
-.no-margins * + *,
-li {
+.margins li + li {
   margin-top: 0;
 }
 
 ul ul, ul ol, ol ol, ol ul {
-  margin-top: 0;
   padding-left: $line;
 }
 
