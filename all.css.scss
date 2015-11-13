@@ -4,54 +4,55 @@
 //
 // General variables
 
-$font-size-multiplier: 16/16;
-$line: 1.382rem;
-$narrower-word-spacing: -0.236em;
-$max-width: $line * 28;
+$font-size-multiplier: 16 /16;
+$line: 22 /16*1rem;
+$max-width: $line * 55;
 
 $main-easing:        cubic-bezier(0.236, 0.000, 0.236, 1.000);
 $reverse-easing:     cubic-bezier(0.618, 0.000, 0.236, 1.000);
 $loop-easing:        ease-in-out;
 
-$main-time: 200ms;
-$short-time: 124ms;
-$loop-time: 6000ms;
+$main-time:    200ms;
+$short-time:   124ms;
+$loop-time:   6000ms;
+
+$main-rounding: $line*0.25;
 
 //
 // Colors
 
 $hue: 202;
-$hue-increment: 1.618;
 
-$hue-1:  $hue + (360/$hue-increment) *  1;
-$hue-2:  $hue + (360/$hue-increment) *  2;
-$hue-3:  $hue + (360/$hue-increment) *  3;
-$hue-4:  $hue + (360/$hue-increment) *  4;
-$hue-5:  $hue + (360/$hue-increment) *  5;
-$hue-6:  $hue + (360/$hue-increment) *  6;
-$hue-7:  $hue + (360/$hue-increment) *  7;
-$hue-8:  $hue + (360/$hue-increment) *  8;
-$hue-9:  $hue + (360/$hue-increment) *  9;
-$hue-10: $hue + (360/$hue-increment) * 10;
-$hue-11: $hue + (360/$hue-increment) * 11;
-$hue-12: $hue + (360/$hue-increment) * 12;
-$hue-13: $hue + (360/$hue-increment) * 13;
+$hue-opposite: $hue + (360/2);
+$hue-analog:   $hue - (360/8);
+$hue-analog-2: $hue + (360/8);
+$hue-split:    $hue + (360/2) - (360/8);
+$hue-split-2:  $hue + (360/2) + (360/8);
+$hue-triad:    $hue + (360/3);
+$hue-triad-2:  $hue + (360/3*2);
+$hue-square:   $hue + (360/4);
+$hue-square-2: $hue + (360/4*3);
 
-$background: hsl($hue-1,  0%, 100%);
+$hue-bg:  $hue;
+$hue-fg:  $hue-split-2;
+$hue-alt: $hue-split-1;
+$colorfulness: 1.0;
 
-$bright: hsl($hue, 0%, 5.6%);
-$body:   hsl($hue, 0%, 9%);
-$dim:    hsl($hue, 0%, 38.2%);
+$dimmer:     hsl($hue-bg, 100%*$colorfulness, 05.6%);
+$emphasizer: hsl($hue-fg, 100%*$colorfulness, 94.4%);
 
-$alt-bright: hsl($hue-1, 50%, 5.6%);
-$alt-body:   hsl($hue-1, 50%, 9%);
-$alt-dim:    hsl($hue-1, 50%, 38.2%);
+$background:    hsl($hue-bg,  50.0%*$colorfulness,  9.0%);
+$body:          hsl($hue-fg,   9.0%*$colorfulness, 61.8%);
+$alt-body:      hsl($hue-alt,  9.0%*$colorfulness, 61.8%);
+$highlight:     hsl($hue-fg,  76.4%*$colorfulness, 61.8%);
+$alt-highlight: hsl($hue-alt, 76.4%*$colorfulness, 61.8%);
 
-$shadow:      hsl($hue, 50%, 5.6%);
-$border:      hsl($hue, 9%, 41.4%);
-
-$highlight:      hsl($hue, 76.4%, 61.8%);
-$alt-highlight:  hsl($hue-1, 38.2%, 50%);
+$off-background: mix($emphasizer, $background,    14.6%);
+$border:         mix($emphasizer, $background,    50.0%);
+$aside:          mix($dimmer,     $body,          23.6%);
+$strong:         mix($emphasizer, $body,          23.6%);
+$alt-aside:      mix($dimmer,     $alt-body,      23.6%);
+$alt-strong:     mix($emphasizer, $alt-body,      23.6%);
 
 //
 // Media queries
@@ -77,21 +78,47 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 @import "reset";
 
 //
-// Font families
+// Typography
 
 html {
-  font-family: serif;
+  font-family: sans-serif;
+}
+
+.size-0 { font-size: 0.813rem; line-height: $line*0.727272727; }
+.size-1 { font-size: 1.000rem; line-height: $line*1.00; }
+.size-2 { font-size: 1.236rem; line-height: $line*1.00; }
+.size-3 { font-size: 1.382rem; line-height: $line*1.00; }
+.size-4 { font-size: 1.618rem; line-height: $line*1.50; }
+.size-5 { font-size: 2.150rem; line-height: $line*1.50; }
+.size-6 { font-size: 2.618rem; line-height: $line*2.00; }
+.size-7 { font-size: 4.236rem; line-height: $line*3.25; }
+
+@media (max-width: #{$l}) {
+  .size-0 { font-size: 0.750rem; line-height: $line*0.727272727; }
+  .size-1 { font-size: 0.813rem; line-height: $line*0.727272727; }
+  .size-2 { font-size: 1.146rem; line-height: $line*1.00; }
+  .size-3 { font-size: 1.236rem; line-height: $line*1.00; }
+  .size-4 { font-size: 1.382rem; line-height: $line*1.50; }
+  .size-5 { font-size: 2.000rem; line-height: $line*1.50; }
+  .size-6 { font-size: 2.236rem; line-height: $line*2.00; }
+  .size-7 { font-size: 3.618rem; line-height: $line*3.00; }
 }
 
 //
 // Basic styles
+
+* {
+  transition-property: transform, opacity;
+  transition-duration: $short-time;
+  transition-timing-function: $main-easing;
+}
 
 html {
   font-size: 100% * $font-size-multiplier;
   line-height: $line;
   background: $background;
   color: $body;
-  -webkit-tap-highlight-color: hsla($hue-1, 100%, 61.8%, 0.5);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -105,17 +132,17 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $bright;
+    color: mix($emphasizer, $highlight, 23.6%);
   }
 
   &:active {
-    color: $dim;
+    color: mix($dimmer, $highlight, 23.6%);
   }
 }
 
 h1, h2, h3, h4, h5, h6,
 strong, b {
-  color: $bright;
+  color: $strong;
 }
 
 hr {
@@ -128,11 +155,326 @@ code {
 
 ::selection {
   background: $highlight;
+  color: $strong;
 }
 
 ::placeholder {
-  color: $dim;
+  color: $aside;
 }
+
+.underlined {
+  background-image: linear-gradient(currentcolor);
+  background-size: 1px 1px;
+  background-position: 0 1.2em;
+  background-repeat: repeat-x;
+  text-shadow:
+     1px  1px 0 $background,
+    -1px -1px 0 $background,
+     1px -1px 0 $background,
+    -1px  1px 0 $background,
+     0    1px 0 $background,
+     1px  0   0 $background,
+     0   -1px 0 $background,
+    -1px  0   0 $background
+  ;
+
+  &:hover,
+  &:focus {
+    background-image: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    color: inherit;
+  }
+}
+
+.in-a-row {
+  display: inline-block;
+
+  & + & {
+    margin-left: $line;
+  }
+}
+
+.align-left   { text-align: left; }
+.align-center { text-align: center; }
+.align-right  { text-align: right; }
+
+.hang-left   { float: left; }
+.hang-right  { float: right; }
+
+.splitter {
+  display: flex;
+  align-items: stretch;
+  // margin: 0 -$line;
+
+  &.justify  { justify-content: space-between; }
+  &.wrap     { flex-wrap: wrap; }
+  &.vertical { flex-direction: column; }
+}
+
+.split {
+  // padding: 0 $line;
+}
+
+//
+// Basic form elements
+
+// <div className="form-group form-group-float">
+//   <label className="label size-0">Text input</label>
+//   <input className="text-input" type="text"/>
+// </div>
+
+.form-group {
+  position: relative;
+  border: 1px solid $border;
+  padding: $line*0.5;
+  overflow: hidden;
+  border-radius: $main-rounding;
+  background: $background;
+
+  & + &,
+  & + .button-row {
+    margin-top: $line*0.5;
+  }
+}
+
+.form-group-boxes {
+  padding-bottom: 0;
+}
+
+.form-group-float {
+  padding: 0;
+}
+
+.label {
+  display: block;
+  color: $strong;
+  font-weight: 400;
+  margin-bottom: $line*0.5;
+
+  .form-group-boxes & {
+    margin-bottom: $line*0.375;
+  }
+
+  .form-group-float & {
+    position: absolute;
+    left: 0; top: 0; right: 0;
+    pointer-events: none;
+    padding: $line*0.5;
+    margin: 0;
+    z-index: 3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.text-input {
+  padding: $line*0.5;
+  width: 100%;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+
+  .form-group-float & {
+    padding-top: $line + $line*0.5;
+  }
+
+  &:hover {
+    background: $off-background;
+  }
+
+  &:focus {
+    background: $off-background;
+    color: $highlight;
+  }
+}
+
+//
+// Stripped select boxes
+
+// <div className="form-group form-group-float">
+//   <label className="label size-0">Select menu</label>
+//   <select className="select-input">
+//     <option>Trolol</option>
+//   </select>
+// </div>
+
+.select-input {
+  display: block;
+  width: 100%;
+  border: 1px solid $border;
+  color: inherit;
+  border-radius: $main-rounding;
+  padding: $line*0.4 $line*0.5 $line*0.35;
+  padding-right: $line*0.5 + $line*0.375*2;
+  background: transparent url("/assets/icon_arrow-up-down.svg") no-repeat right $line*0.25 center;
+  background-size: $line*0.75;
+  appearance: none;
+
+  .form-group-float & {
+    padding: $line*0.4 ($line*0.5 + $line*0.375*2) $line*0.35 $line*0.5;
+    background-position: right $line*0.25 bottom $line*0.5;
+    border-width: 1px 0 0;
+    margin-top: ($line + $line*0.5 + $line*0.125)
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $off-background;
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: $highlight;
+  }
+}
+
+//
+// Checkboxes and radio buttons
+
+// <div className="form-group form-group-boxes">
+//   <label className="label size-0">Checkboxes and radio buttons</label>
+//   <label className="box-label">
+//     <input type="checkbox"/>
+//     <span className="box-text">Checkbox</span>
+//   </label>
+// </div>
+
+.box-label {
+  display: block;
+  padding: $line*0.375 $line*0.5;
+  margin: 0 ($line * -0.5);
+  border-top: 1px solid $border;
+
+  &:last-child {
+    padding-bottom: $line*0.5;
+  }
+
+  input {
+    cursor: inherit;
+    margin-right: $line*0.25;
+    position: relative;
+    top: -1px;
+
+    &:focus + .box-text {
+      color: $highlight;
+    }
+  }
+
+  &:hover {
+    background-color: $off-background;
+    cursor: pointer;
+  }
+}
+
+.box-text {
+
+}
+
+.button.button {
+  font-weight: 400;
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: $main-rounding;
+  padding: .30375em .6875em .38375em; // $line*0.25 $line*0.5
+  cursor: pointer;
+  color: $strong;
+  background: $off-background;
+
+  &:hover,
+  &:focus {
+    background: $highlight;
+    color: $background;
+    border-color: transparent;
+  }
+
+  &:active {
+    background: $strong;
+    color: $background;
+    border-color: transparent;
+  }
+
+  & + & {
+    margin-left: $line*0.375;
+  }
+}
+
+//
+// Toggle switches (made with checkboxes)
+
+// <label className="toggle in-a-row">
+//   <input type="checkbox" name="viewtype"/>
+//   <span className="options">
+//     <span className="option left-option">Left</span>
+//     <span className="toggle-switch">
+//       <span className="toggle-nib">
+//       </span>
+//     </span>
+//     <span className="option right-option">Right</span>
+//   </span>
+// </label>
+
+.toggle {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 400;
+
+  input {
+    display: none;
+  }
+}
+
+.left-option,
+input:checked + .options .right-option {
+  color: $body;
+  font-weight: 400;
+}
+
+.right-option,
+input:checked + .options .left-option {
+  color: $aside;
+  font-weight: 300;
+}
+
+.toggle-switch {
+  display: inline-block;
+  position: relative;
+  border-radius: $main-rounding*3;
+  height: $line*0.75;
+  vertical-align: middle;
+  width: $line*1.5;
+  margin: 0 $line*0.25;
+  position: relative;
+  top: -1px;
+  color: $highlight;
+  background: $highlight;
+
+  .toggle:hover & {
+    color: $alt-highlight;
+    background: $alt-highlight;
+  }
+}
+
+.toggle-nib {
+  display: block;
+  width: $line*0.75;
+  height: 100%;
+  background: $white;
+  border: 1px solid currentcolor;
+  border-radius: 50%;
+  transform: translateX(0%);
+
+  input:checked + .options & {
+    transform: translateX(100%);
+  }
+}
+
 
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
