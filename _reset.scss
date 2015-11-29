@@ -12,15 +12,6 @@
   text-size-adjust: 100%;
 }
 
-// Owl selector spacing
-.margins * + * {
-  margin-top: $line;
-}
-
-.margins li + li {
-  margin-top: 0;
-}
-
 ul ul, ul ol, ol ol, ol ul {
   padding-left: $line;
 }
