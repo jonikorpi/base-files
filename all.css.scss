@@ -14,7 +14,7 @@ $loop-easing:        ease-in-out;
 
 $main-time:    200ms;
 $short-time:   124ms;
-$loop-time:   6000ms;
+$loop-time:   5800ms;
 
 $spacing-xxs: $line*0.250;
 $spacing-xs:  $line*0.375;
@@ -43,7 +43,7 @@ $hue-square-2: $hue + (360/4*3);
 
 $hue-bg:  $hue;
 $hue-fg:  $hue-split-2;
-$hue-alt: $hue-split-1;
+$hue-alt: $hue-split;
 $colorfulness: 1.0;
 
 $dimmer:     hsl($hue-bg, 100%*$colorfulness, 05.6%);
@@ -103,6 +103,19 @@ strong, b  { font-weight: 500; }
 .all-caps   { text-transform: uppercase;  }
 .capitalize { text-transform: capitalize; }
 
+a {
+  color: $highlight;
+  text-decoration: none;
+
+  &:hover {
+    color: mix($emphasizer, $highlight, 23.6%);
+  }
+
+  &:active {
+    color: mix($dimmer, $highlight, 23.6%);
+  }
+}
+
 .underlined {
   background-image: linear-gradient(currentcolor);
   background-size: 1px 1px;
@@ -135,11 +148,11 @@ strong, b  { font-weight: 500; }
 }
 
 //
-// Basic styles
+// Root styles
 
 * {
   transition-property: transform, opacity;
-  transition-duration: $short-time;
+  transition-duration: $main-time;
   transition-timing-function: $main-easing;
 }
 
@@ -156,19 +169,6 @@ body {
   max-width: 100%;
   overflow: hidden;
   overflow-y: visible;
-}
-
-a {
-  color: $highlight;
-  text-decoration: none;
-
-  &:hover {
-    color: mix($emphasizer, $highlight, 23.6%);
-  }
-
-  &:active {
-    color: mix($dimmer, $highlight, 23.6%);
-  }
 }
 
 //
@@ -256,11 +256,18 @@ a {
 .hang-left   { float: left; }
 .hang-right  { float: right; }
 
-.abs-center {
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-}
+.abs-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.abs-all    { position: absolute; left:   0; top:   0; right: 0; bottom: 0; }
+
+.abs-left   { position: absolute; top:  0; bottom: 0; left:   0; }
+.abs-right  { position: absolute; top:  0; bottom: 0; right:  0; }
+.abs-top    { position: absolute; left: 0; right:  0; top:    0; }
+.abs-bottom { position: absolute; left: 0; right:  0; bottom: 0; }
+
+.abs-top-left     { position: absolute; top:    0; left:  0; }
+.abs-top-right    { position: absolute; top:    0; right: 0; }
+.abs-bottom-left  { position: absolute; bottom: 0; left:  0; }
+.abs-bottom-right { position: absolute; bottom: 0; right: 0; }
 
 //
 // Basic form elements
