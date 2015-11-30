@@ -201,14 +201,14 @@ body {
 .half-padded > *   { padding: $spacing-s  0 0 $spacing-s; }
 .half-padded-s > * { padding: $spacing-xs 0 0 $spacing-xs; }
 
-.auto-margins-xxs > * + * { margin-top: $spacing-xxs; }
-.auto-margins-xs  > * + * { margin-top: $spacing-xs;  }
-.auto-margins-s   > * + * { margin-top: $spacing-s;   }
-.auto-margins     > * + * { margin-top: $spacing;     }
-.auto-margins-l   > * + * { margin-top: $spacing-l;   }
-.auto-margins-xl  > * + * { margin-top: $spacing-xl;  }
-.auto-margins-xxl > * + * { margin-top: $spacing-xxl; }
-.auto-margins-hairline   > * + * { margin-top: 1px; }
+.auto-margins-v-xxs > * + * { margin-top: $spacing-xxs; }
+.auto-margins-v-xs  > * + * { margin-top: $spacing-xs;  }
+.auto-margins-v-s   > * + * { margin-top: $spacing-s;   }
+.auto-margins-v     > * + * { margin-top: $spacing;     }
+.auto-margins-v-l   > * + * { margin-top: $spacing-l;   }
+.auto-margins-v-xl  > * + * { margin-top: $spacing-xl;  }
+.auto-margins-v-xxl > * + * { margin-top: $spacing-xxl; }
+.auto-margins-v-hairline   > * + * { margin-top: 1px; }
 
 .auto-margins-h-xxs > * + * { display: inline-block; margin-left: $spacing-xxs; }
 .auto-margins-h-xs  > * + * { display: inline-block; margin-left: $spacing-xs;  }
@@ -221,13 +221,9 @@ body {
 
 .auto-borders > * + * { border-top: 1px solid $border; }
 
+.auto-fence { border-bottom: 1px solid $border; }
 .auto-fence > *,
 .auto-fence > tr td {
-  border-bottom: 1px solid $border;
-}
-
-.auto-fence > *:first-child,
-.auto-fence > tr:first-child td {
   border-top: 1px solid $border;
 }
 
@@ -240,6 +236,24 @@ body {
 .padding-xxl { padding: $spacing-xxl; }
 .padding-hairline { padding: 1px; }
 
+.padding-h-xxs { padding: 0 $spacing-xxs; }
+.padding-h-xs  { padding: 0 $spacing-xs;  }
+.padding-h-s   { padding: 0 $spacing-s;   }
+.padding-h     { padding: 0 $spacing;     }
+.padding-h-l   { padding: 0 $spacing-l;   }
+.padding-h-xl  { padding: 0 $spacing-xl;  }
+.padding-h-xxl { padding: 0 $spacing-xxl; }
+.padding-h-hairline { padding: 0 1px; }
+
+.padding-v-xxs { padding: $spacing-xxs 0; }
+.padding-v-xs  { padding: $spacing-xs 0;  }
+.padding-v-s   { padding: $spacing-s 0;   }
+.padding-v     { padding: $spacing 0;     }
+.padding-v-l   { padding: $spacing-l 0;   }
+.padding-v-xl  { padding: $spacing-xl 0;  }
+.padding-v-xxl { padding: $spacing-xxl 0; }
+.padding-v-hairline { padding: 1px 0; }
+
 .margin-xxs { padding: $spacing-xxs; }
 .margin-xs  { padding: $spacing-xs;  }
 .margin-s   { padding: $spacing-s;   }
@@ -248,6 +262,24 @@ body {
 .margin-xl  { padding: $spacing-xl;  }
 .margin-xxl { padding: $spacing-xxl; }
 .margin-hairline { margin: 1px; }
+
+.margin-h-xxs { padding: 0 $spacing-xxs; }
+.margin-h-xs  { padding: 0 $spacing-xs;  }
+.margin-h-s   { padding: 0 $spacing-s;   }
+.margin-h     { padding: 0 $spacing;     }
+.margin-h-l   { padding: 0 $spacing-l;   }
+.margin-h-xl  { padding: 0 $spacing-xl;  }
+.margin-h-xxl { padding: 0 $spacing-xxl; }
+.margin-h-hairline { margin: 0 1px; }
+
+.margin-v-xxs { padding: $spacing-xxs 0; }
+.margin-v-xs  { padding: $spacing-xs 0;  }
+.margin-v-s   { padding: $spacing-s 0;   }
+.margin-v     { padding: $spacing 0;     }
+.margin-v-l   { padding: $spacing-l 0;   }
+.margin-v-xl  { padding: $spacing-xl 0;  }
+.margin-v-xxl { padding: $spacing-xxl 0; }
+.margin-v-hairline { margin: 1px 0; }
 
 .align-left   { text-align: left;   }
 .align-center { text-align: center; }
