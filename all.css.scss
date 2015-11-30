@@ -12,9 +12,9 @@ $main-easing:        cubic-bezier(0.236, 0.000, 0.236, 1.000);
 $reverse-easing:     cubic-bezier(0.618, 0.000, 0.236, 1.000);
 $loop-easing:        ease-in-out;
 
-$main-time:    200ms;
-$short-time:   $main-time / 1.618;
-$loop-time:    $main-time*30;
+$main-time:  200ms;
+$short-time: $main-time / 1.618;
+$loop-time:  $main-time*30;
 
 $spacing-xxs: $line*0.250;
 $spacing-xs:  $line*0.375;
