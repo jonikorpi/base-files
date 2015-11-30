@@ -4,8 +4,8 @@
 //
 // General variables
 
-$font-size-multiplier: 16 /16;
-$line: 22 /16*1rem;
+$font-size-multiplier: 16 / 16;
+$line: 22 / 16 * 1rem;
 $max-width: $line * 55;
 
 $main-easing:        cubic-bezier(0.236, 0.000, 0.236, 1.000);
@@ -13,8 +13,8 @@ $reverse-easing:     cubic-bezier(0.618, 0.000, 0.236, 1.000);
 $loop-easing:        ease-in-out;
 
 $main-time:    200ms;
-$short-time:   124ms;
-$loop-time:   5800ms;
+$short-time:   $main-time / 1.618;
+$loop-time:    $main-time*30;
 
 $spacing-xxs: $line*0.250;
 $spacing-xs:  $line*0.375;
@@ -23,6 +23,7 @@ $spacing:     $line*1.000;
 $spacing-l:   $line*1.500;
 $spacing-xl:  $line*2.000;
 $spacing-xxl: $line*2.500;
+$hairline:    1px;
 
 $main-rounding: $line*0.250;
 
@@ -44,6 +45,7 @@ $hue-square-2: $hue + (360/4*3);
 $hue-bg:  $hue;
 $hue-fg:  $hue-split-2;
 $hue-alt: $hue-split;
+
 $colorfulness: 1.0;
 
 $dimmer:     hsl($hue-bg, 100%*$colorfulness, 05.6%);
@@ -74,6 +76,8 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // Imports
 
 @import "reset";
+@import "layout";
+@import "forms";
 
 //
 // Typography
@@ -92,13 +96,12 @@ html {
 .size-6 { font-size: 2.618rem; line-height: $line*2.00; }
 .size-7 { font-size: 4.236rem; line-height: $line*3.25; }
 
-.lighter   { font-weight: 200; }
-.light     { font-weight: 300; }
-.medium    { font-weight: 400; }
-.strong,
-strong, b  { font-weight: 500; }
-.stronger  { font-weight: 600; }
-.strongest { font-weight: 700; }
+.lighter           { font-weight: 200; }
+.light             { font-weight: 300; }
+.medium            { font-weight: 400; }
+.strong, strong, b { font-weight: 500; }
+.stronger          { font-weight: 600; }
+.strongest         { font-weight: 700; }
 
 .all-caps   { text-transform: uppercase;  }
 .capitalize { text-transform: capitalize; }
@@ -118,12 +121,12 @@ a {
 
 .underlined {
   background-image: linear-gradient(currentcolor);
-  background-size: 1px 1px;
+  background-size: $hairline $hairline;
   background-position: 0 1.15em;
   background-repeat: repeat-x;
   text-shadow:
-    1px 0 0  $background,
-    -1px 0 0 $background
+    $hairline 0 0  $background,
+    -$hairline 0 0 $background
   ;
 
   &:hover,
@@ -170,393 +173,6 @@ body {
   overflow: hidden;
   overflow-y: visible;
 }
-
-//
-// Layout classes
-
-.splitter {
-  display: flex;
-  align-items: stretch;
-
-  &.no-stretch   { align-items: flex-start; }
-  &.center       { align-items: center; }
-  &.justify      { justify-content: space-between; }
-  &.align-center { justify-content: center; }
-  &.align-end    { justify-content: flex-end; }
-  &.wrap         { flex-wrap: wrap; }
-  &.vertical     { flex-direction: column; }
-
-  &.padded        { margin-left: -$spacing-s;  margin-right: -$spacing-s; }
-  &.padded-s      { margin-left: -$spacing-xs; margin-right: -$spacing-xs; }
-  &.half-padded   { margin-left: -$spacing-s;  margin-top:   -$spacing-s; }
-  &.half-padded-s { margin-left: -$spacing-xs; margin-top:   -$spacing-xs; }
-}
-
-.padded   > * { padding-left: $spacing-s;  padding-right: $spacing-s; }
-.padded-s > * { padding-left: $spacing-xs; padding-right: $spacing-xs; }
-
-.padded.wrap > *   { padding-top: $spacing-s;  padding-bottom: $spacing-s; }
-.padded-s.wrap > * { padding-top: $spacing-xs; padding-bottom: $spacing-xs; }
-
-.half-padded > *   { padding: $spacing-s  0 0 $spacing-s; }
-.half-padded-s > * { padding: $spacing-xs 0 0 $spacing-xs; }
-
-.auto-margins-v-xxs > * + * { margin-top: $spacing-xxs; }
-.auto-margins-v-xs  > * + * { margin-top: $spacing-xs;  }
-.auto-margins-v-s   > * + * { margin-top: $spacing-s;   }
-.auto-margins-v     > * + * { margin-top: $spacing;     }
-.auto-margins-v-l   > * + * { margin-top: $spacing-l;   }
-.auto-margins-v-xl  > * + * { margin-top: $spacing-xl;  }
-.auto-margins-v-xxl > * + * { margin-top: $spacing-xxl; }
-.auto-margins-v-hairline   > * + * { margin-top: 1px; }
-
-.auto-margins-h-xxs > * + * { display: inline-block; margin-left: $spacing-xxs; }
-.auto-margins-h-xs  > * + * { display: inline-block; margin-left: $spacing-xs;  }
-.auto-margins-h-s   > * + * { display: inline-block; margin-left: $spacing-s;   }
-.auto-margins-h     > * + * { display: inline-block; margin-left: $spacing;     }
-.auto-margins-h-l   > * + * { display: inline-block; margin-left: $spacing-l;   }
-.auto-margins-h-xl  > * + * { display: inline-block; margin-left: $spacing-xl;  }
-.auto-margins-h-xxl > * + * { display: inline-block; margin-left: $spacing-xxl; }
-.auto-margins-h-hairline > * + * { display: inline-block; margin-left: 1px; }
-
-.auto-borders > * + * { border-top: 1px solid $border; }
-
-.auto-fence { border-bottom: 1px solid $border; }
-.auto-fence > *,
-.auto-fence > tr td {
-  border-top: 1px solid $border;
-}
-
-.padding-xxs { padding: $spacing-xxs; }
-.padding-xs  { padding: $spacing-xs;  }
-.padding-s   { padding: $spacing-s;   }
-.padding     { padding: $spacing;     }
-.padding-l   { padding: $spacing-l;   }
-.padding-xl  { padding: $spacing-xl;  }
-.padding-xxl { padding: $spacing-xxl; }
-.padding-hairline { padding: 1px; }
-
-.padding-h-xxs { padding: 0 $spacing-xxs; }
-.padding-h-xs  { padding: 0 $spacing-xs;  }
-.padding-h-s   { padding: 0 $spacing-s;   }
-.padding-h     { padding: 0 $spacing;     }
-.padding-h-l   { padding: 0 $spacing-l;   }
-.padding-h-xl  { padding: 0 $spacing-xl;  }
-.padding-h-xxl { padding: 0 $spacing-xxl; }
-.padding-h-hairline { padding: 0 1px; }
-
-.padding-v-xxs { padding: $spacing-xxs 0; }
-.padding-v-xs  { padding: $spacing-xs 0;  }
-.padding-v-s   { padding: $spacing-s 0;   }
-.padding-v     { padding: $spacing 0;     }
-.padding-v-l   { padding: $spacing-l 0;   }
-.padding-v-xl  { padding: $spacing-xl 0;  }
-.padding-v-xxl { padding: $spacing-xxl 0; }
-.padding-v-hairline { padding: 1px 0; }
-
-.margin-xxs { padding: $spacing-xxs; }
-.margin-xs  { padding: $spacing-xs;  }
-.margin-s   { padding: $spacing-s;   }
-.margin     { padding: $spacing;     }
-.margin-l   { padding: $spacing-l;   }
-.margin-xl  { padding: $spacing-xl;  }
-.margin-xxl { padding: $spacing-xxl; }
-.margin-hairline { margin: 1px; }
-
-.margin-h-xxs { padding: 0 $spacing-xxs; }
-.margin-h-xs  { padding: 0 $spacing-xs;  }
-.margin-h-s   { padding: 0 $spacing-s;   }
-.margin-h     { padding: 0 $spacing;     }
-.margin-h-l   { padding: 0 $spacing-l;   }
-.margin-h-xl  { padding: 0 $spacing-xl;  }
-.margin-h-xxl { padding: 0 $spacing-xxl; }
-.margin-h-hairline { margin: 0 1px; }
-
-.margin-v-xxs { padding: $spacing-xxs 0; }
-.margin-v-xs  { padding: $spacing-xs 0;  }
-.margin-v-s   { padding: $spacing-s 0;   }
-.margin-v     { padding: $spacing 0;     }
-.margin-v-l   { padding: $spacing-l 0;   }
-.margin-v-xl  { padding: $spacing-xl 0;  }
-.margin-v-xxl { padding: $spacing-xxl 0; }
-.margin-v-hairline { margin: 1px 0; }
-
-.align-left   { text-align: left;   }
-.align-center { text-align: center; }
-.align-right  { text-align: right;  }
-
-.hang-left   { float: left; }
-.hang-right  { float: right; }
-
-.abs-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.abs-all    { position: absolute; left:   0; top:   0; right: 0; bottom: 0; }
-
-.abs-left   { position: absolute; top:  0; bottom: 0; left:   0; }
-.abs-right  { position: absolute; top:  0; bottom: 0; right:  0; }
-.abs-top    { position: absolute; left: 0; right:  0; top:    0; }
-.abs-bottom { position: absolute; left: 0; right:  0; bottom: 0; }
-
-.abs-top-left     { position: absolute; top:    0; left:  0; }
-.abs-top-right    { position: absolute; top:    0; right: 0; }
-.abs-bottom-left  { position: absolute; bottom: 0; left:  0; }
-.abs-bottom-right { position: absolute; bottom: 0; right: 0; }
-
-//
-// Basic form elements
-
-// <div className="form-group form-group-float">
-//   <label className="label size-0">Text input</label>
-//   <input className="text-input" type="text"/>
-// </div>
-
-.form-group {
-  position: relative;
-  border: 1px solid $border;
-  padding: $line*0.5;
-  overflow: hidden;
-  border-radius: $main-rounding;
-  background: $background;
-
-  & + &,
-  & + .button-row {
-    margin-top: $line*0.5;
-  }
-}
-
-.form-group-boxes {
-  padding-bottom: 0;
-}
-
-.form-group-float {
-  padding: 0;
-}
-
-.label {
-  display: block;
-  color: $strong;
-  font-weight: 400;
-  margin-bottom: $line*0.5;
-
-  .form-group-boxes & {
-    margin-bottom: $line*0.375;
-  }
-
-  .form-group-float & {
-    position: absolute;
-    left: 0; top: 0; right: 0;
-    pointer-events: none;
-    padding: $line*0.5;
-    margin: 0;
-    z-index: 3;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-}
-
-.text-input {
-  padding: $line*0.5;
-  width: 100%;
-  display: block;
-  position: relative;
-  border: none;
-  background: transparent;
-
-  .form-group-float & {
-    padding-top: $line + $line*0.5;
-  }
-
-  &:hover {
-    background: $off-background;
-  }
-
-  &:focus {
-    background: $off-background;
-    color: $highlight;
-  }
-}
-
-//
-// Stripped select boxes
-
-// <div className="form-group form-group-float">
-//   <label className="label size-0">Select menu</label>
-//   <select className="select-input">
-//     <option>Trolol</option>
-//   </select>
-// </div>
-
-.select-input {
-  display: block;
-  width: 100%;
-  border: 1px solid $border;
-  color: inherit;
-  border-radius: $main-rounding;
-  padding: $line*0.4 $line*0.5 $line*0.35;
-  padding-right: $line*0.5 + $line*0.375*2;
-  background: transparent url("/assets/icon_arrow-up-down.svg") no-repeat right $line*0.25 center;
-  background-size: $line*0.75;
-  appearance: none;
-
-  .form-group-float & {
-    padding: $line*0.4 ($line*0.5 + $line*0.375*2) $line*0.35 $line*0.5;
-    background-position: right $line*0.25 bottom $line*0.5;
-    border-width: 1px 0 0;
-    margin-top: ($line + $line*0.5 + $line*0.125)
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $off-background;
-    cursor: pointer;
-  }
-
-  &:focus {
-    color: $highlight;
-  }
-}
-
-//
-// Checkboxes and radio buttons
-
-// <div className="form-group form-group-boxes">
-//   <label className="label size-0">Checkboxes and radio buttons</label>
-//   <label className="box-label">
-//     <input type="checkbox"/>
-//     <span className="box-text">Checkbox</span>
-//   </label>
-// </div>
-
-.box-label {
-  display: block;
-  padding: $line*0.375 $line*0.5;
-  margin: 0 ($line * -0.5);
-  border-top: 1px solid $border;
-
-  &:last-child {
-    padding-bottom: $line*0.5;
-  }
-
-  input {
-    cursor: inherit;
-    margin-right: $line*0.25;
-    position: relative;
-    top: -1px;
-
-    &:focus + .box-text {
-      color: $highlight;
-    }
-  }
-
-  &:hover {
-    background-color: $off-background;
-    cursor: pointer;
-  }
-}
-
-.box-text {
-
-}
-
-.button.button {
-  font-weight: 400;
-  appearance: none;
-  background: none;
-  border: none;
-  border-radius: $main-rounding;
-  padding: .30375em .6875em .38375em; // $line*0.25 $line*0.5
-  cursor: pointer;
-  color: $strong;
-  background: $off-background;
-
-  &:hover,
-  &:focus {
-    background: $highlight;
-    color: $background;
-    border-color: transparent;
-  }
-
-  &:active {
-    background: $strong;
-    color: $background;
-    border-color: transparent;
-  }
-
-  & + & {
-    margin-left: $line*0.375;
-  }
-}
-
-//
-// Toggle switches (made with checkboxes)
-
-// <label className="toggle in-a-row">
-//   <input type="checkbox" name="viewtype"/>
-//   <span className="options">
-//     <span className="option left-option">Left</span>
-//     <span className="toggle-switch">
-//       <span className="toggle-nib">
-//       </span>
-//     </span>
-//     <span className="option right-option">Right</span>
-//   </span>
-// </label>
-
-.toggle {
-  cursor: pointer;
-  user-select: none;
-  font-weight: 400;
-
-  input {
-    display: none;
-  }
-}
-
-.left-option,
-input:checked + .options .right-option {
-  color: $body;
-  font-weight: 400;
-}
-
-.right-option,
-input:checked + .options .left-option {
-  color: $aside;
-  font-weight: 300;
-}
-
-.toggle-switch {
-  display: inline-block;
-  position: relative;
-  border-radius: $main-rounding*3;
-  height: $line*0.75;
-  vertical-align: middle;
-  width: $line*1.5;
-  margin: 0 $line*0.25;
-  position: relative;
-  top: -1px;
-  color: $highlight;
-  background: $highlight;
-
-  .toggle:hover & {
-    color: $alt-highlight;
-    background: $alt-highlight;
-  }
-}
-
-.toggle-nib {
-  display: block;
-  width: $line*0.75;
-  height: 100%;
-  background: $white;
-  border: 1px solid currentcolor;
-  border-radius: 50%;
-  transform: translateX(0%);
-
-  input:checked + .options & {
-    transform: translateX(100%);
-  }
-}
-
 
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
