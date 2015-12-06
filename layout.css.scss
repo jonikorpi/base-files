@@ -220,3 +220,9 @@
 .abs-top-right    { position: absolute; top:    0; right: 0; }
 .abs-bottom-left  { position: absolute; bottom: 0; left:  0; }
 .abs-bottom-right { position: absolute; bottom: 0; right: 0; }
+
+//
+// Pointer events
+
+.no-events { pointer-events: none; }
+.events    { pointer-events: all;  }
