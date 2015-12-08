@@ -39,13 +39,13 @@
 .auto-margins-v-xl  > * + * { margin-top: $spacing-xl;  }
 .auto-margins-v-xxl > * + * { margin-top: $spacing-xxl; }
 
-.auto-margins-h-xxs > * + * { display: inline-block; margin-left: $spacing-xxs; }
-.auto-margins-h-xs  > * + * { display: inline-block; margin-left: $spacing-xs;  }
-.auto-margins-h-s   > * + * { display: inline-block; margin-left: $spacing-s;   }
-.auto-margins-h     > * + * { display: inline-block; margin-left: $spacing;     }
-.auto-margins-h-l   > * + * { display: inline-block; margin-left: $spacing-l;   }
-.auto-margins-h-xl  > * + * { display: inline-block; margin-left: $spacing-xl;  }
-.auto-margins-h-xxl > * + * { display: inline-block; margin-left: $spacing-xxl; }
+.auto-margins-h-xxs > * + * { margin-left: $spacing-xxs; }
+.auto-margins-h-xs  > * + * { margin-left: $spacing-xs;  }
+.auto-margins-h-s   > * + * { margin-left: $spacing-s;   }
+.auto-margins-h     > * + * { margin-left: $spacing;     }
+.auto-margins-h-l   > * + * { margin-left: $spacing-l;   }
+.auto-margins-h-xl  > * + * { margin-left: $spacing-xl;  }
+.auto-margins-h-xxl > * + * { margin-left: $spacing-xxl; }
 
 .auto-margins-v-hairline > * + * { margin-top:  $hairline; }
 .auto-margins-h-hairline > * + * { margin-left: $hairline; }
