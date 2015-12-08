@@ -53,13 +53,11 @@
 //
 // Auto-borders
 
-.auto-borders > * + * { border-top: $hairline solid $border; }
+.auto-borders         { border: solid $border; border-width: 1px 0   0   1px; }
+.auto-borders > * + * { border: solid $border; border-width: 0   1px 1px 0; }
 
-.auto-fence { border-bottom: $hairline solid $border; }
-.auto-fence > *,
-.auto-fence > tr td {
-  border-top: $hairline solid $border;
-}
+.auto-borders-v > * + * { border-top: $hairline solid $border; }
+.auto-borders-h > * + * { border-left: $hairline solid $border; }
 
 //
 // Paddings
@@ -196,6 +194,19 @@
 .margin-right-hairline  { margin-right:  $hairline; }
 .margin-bottom-hairline { margin-bottom: $hairline; }
 .margin-left-hairline   { margin-left:   $hairline; }
+
+//
+// Borders
+
+.borders   { border: 1px solid $border; }
+
+.borders-v { border: solid $border; border-width: 1px 0;  }
+.borders-h { border: solid $border; border-width: 0   1px;}
+
+.border-left   { border-left:   1px solid $border; }
+.border-top    { border-top:    1px solid $border; }
+.border-right  { border-right:  1px solid $border; }
+.border-bottom { border-bottom: 1px solid $border; }
 
 //
 // Alignments
