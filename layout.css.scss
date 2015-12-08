@@ -23,6 +23,11 @@
   &.reverse          { flex-direction: row-reverse; }
 }
 
+.auto-stretch > * {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
 //
 // Auto-margins
 
