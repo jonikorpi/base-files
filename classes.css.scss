@@ -53,11 +53,15 @@
 //
 // Auto-borders
 
-.auto-borders         { border: solid $border; border-width: 1px 0   0   1px; }
-.auto-borders > * + * { border: solid $border; border-width: 0   1px 1px 0; }
+.auto-borders >   *,
+.auto-borders-v > *,
+.auto-borders-h > * { border: 0 solid $border; }
 
-.auto-borders-v > * + * { border-top: $hairline solid $border; }
-.auto-borders-h > * + * { border-left: $hairline solid $border; }
+.auto-borders         { border: 0 solid $border; border-width: 1px 0 0 1px; }
+.auto-borders > * + * { border-width: 0 1px 1px 0; }
+
+.auto-borders-v > * + * { border-top-width:  $hairline; }
+.auto-borders-h > * + * { border-left-width: $hairline; }
 
 //
 // Paddings
@@ -224,23 +228,66 @@
 //
 // Position absolutes
 
-.rel { position: relative; }
+.pos-all    { position: absolute; left: 0; top:    0; right:  0; margin: auto; bottom: 0; }
+.pos-left   { position: absolute; top:  0; bottom: 0; left:   0; margin: auto; }
+.pos-right  { position: absolute; top:  0; bottom: 0; right:  0; margin: auto; }
+.pos-top    { position: absolute; left: 0; right:  0; top:    0; margin: auto; }
+.pos-bottom { position: absolute; left: 0; right:  0; bottom: 0; margin: auto; }
 
-.abs-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.abs-all    { position: absolute; left:   0; top:   0; right: 0; bottom: 0; }
+.pos-top-left     { position: absolute; top:    0; left:  0; }
+.pos-top-right    { position: absolute; top:    0; right: 0; }
+.pos-bottom-left  { position: absolute; bottom: 0; left:  0; }
+.pos-bottom-right { position: absolute; bottom: 0; right: 0; }
 
-.abs-left   { position: absolute; top:  0; bottom: 0; left:   0; }
-.abs-right  { position: absolute; top:  0; bottom: 0; right:  0; }
-.abs-top    { position: absolute; left: 0; right:  0; top:    0; }
-.abs-bottom { position: absolute; left: 0; right:  0; bottom: 0; }
+.pos-center-top-left     { position: absolute; top:    50%; left:  50%; }
+.pos-center-top-right    { position: absolute; top:    50%; right: 50%; }
+.pos-center-bottom-left  { position: absolute; bottom: 50%; left:  50%; }
+.pos-center-bottom-right { position: absolute; bottom: 50%; right: 50%; }
 
-.abs-top-left     { position: absolute; top:    0; left:  0; }
-.abs-top-right    { position: absolute; top:    0; right: 0; }
-.abs-bottom-left  { position: absolute; bottom: 0; left:  0; }
-.abs-bottom-right { position: absolute; bottom: 0; right: 0; }
+.relative { position: relative; }
+.fixed    { position: fixed;    }
+
+//
+// Transforms
+
+.translate-half-up-left    { transform: translate(-50%, -50%); }
+.translate-half-up-right   { transform: translate( 50%, -50%); }
+.translate-half-down-left  { transform: translate(-50%,  50%); }
+.translate-half-down-right { transform: translate( 50%,  50%); }
+
+.translate-full-up-left    { transform: translate(-100%, -100%); }
+.translate-full-up-right   { transform: translate( 100%, -100%); }
+.translate-full-down-left  { transform: translate(-100%,  100%); }
+.translate-full-down-right { transform: translate( 100%,  100%); }
+
+.translate-half-left  { transform: translateX(-50%); }
+.translate-half-right { transform: translateX( 50%); }
+.translate-half-up    { transform: translateY(-50%); }
+.translate-half-down  { transform: translateY( 50%); }
+
+.translate-full-left  { transform: translateX(-100%); }
+.translate-full-right { transform: translateX( 100%); }
+.translate-full-up    { transform: translateY(-100%); }
+.translate-full-down  { transform: translateY( 100%); }
+
+.rotate-right-45  { transform: rotate( 45deg); }
+.rotate-right-90  { transform: rotate( 90deg); }
+.rotate-right-180 { transform: rotate(180deg); }
+.rotate-right-270 { transform: rotate(270deg); }
+
+.rotate-left-45  { transform: rotate( -45deg); }
+.rotate-left-90  { transform: rotate( -90deg); }
+.rotate-left-180 { transform: rotate(-180deg); }
+.rotate-left-270 { transform: rotate(-270deg); }
 
 //
 // Pointer events
 
 .no-events { pointer-events: none; }
 .events    { pointer-events: all;  }
+
+//
+// Typography
+
+.all-caps   { text-transform: uppercase;  }
+.capitalize { text-transform: capitalize; }

@@ -23,7 +23,9 @@ $spacing:     $line*1.000;
 $spacing-l:   $line*1.500;
 $spacing-xl:  $line*2.000;
 $spacing-xxl: $line*2.500;
-$hairline:    1px;
+
+$hairline: 1px;
+$underline-offset: 1.15em;
 
 $main-rounding: $line*0.250;
 
@@ -67,6 +69,30 @@ $alt-aside:      mix($dimmer,     $alt-body,      23.6%);
 $strong:         mix($emphasizer, $body,          23.6%);
 $alt-strong:     mix($emphasizer, $alt-body,      23.6%);
 
+.color-background    { color: $background; }
+.color-body          { color: $body; }
+.color-alt-body      { color: $alt-body; }
+.color-highlight     { color: $highlight; }
+.color-alt-highlight { color: $alt-highlight; }
+.color-off-ackground { color: $off-ackground; }
+.color-border        { color: $border; }
+.color-aside         { color: $aside; }
+.color-alt-aside     { color: $alt-aside; }
+.color-strong        { color: $strong; }
+.color-alt-strong    { color: $alt-strong; }
+
+.bg-background    { background-color: $background; }
+.bg-body          { background-color: $body; }
+.bg-alt-body      { background-color: $alt-body; }
+.bg-highlight     { background-color: $highlight; }
+.bg-alt-highlight { background-color: $alt-highlight; }
+.bg-off-ackground { background-color: $off-ackground; }
+.bg-border        { background-color: $border; }
+.bg-aside         { background-color: $aside; }
+.bg-alt-aside     { background-color: $alt-aside; }
+.bg-strong        { background-color: $strong; }
+.bg-alt-strong    { background-color: $alt-strong; }
+
 //
 // Media queries
 
@@ -76,7 +102,7 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // Imports
 
 @import "reset";
-@import "layout";
+@import "classes";
 @import "forms";
 
 //
@@ -87,42 +113,10 @@ html {
   font-weight: 400;
 }
 
-.size-0 { font-size: 0.813rem; line-height: $line*0.727272727; }
-.size-1 { font-size: 1.000rem; line-height: $line*1.00; }
-.size-2 { font-size: 1.236rem; line-height: $line*1.00; }
-.size-3 { font-size: 1.382rem; line-height: $line*1.00; }
-.size-4 { font-size: 1.618rem; line-height: $line*1.50; }
-.size-5 { font-size: 2.150rem; line-height: $line*1.50; }
-.size-6 { font-size: 2.618rem; line-height: $line*2.00; }
-.size-7 { font-size: 4.236rem; line-height: $line*3.25; }
-
-.lighter           { font-weight: 200; }
-.light             { font-weight: 300; }
-.medium            { font-weight: 400; }
-.strong, strong, b { font-weight: 500; }
-.stronger          { font-weight: 600; }
-.strongest         { font-weight: 700; }
-
-.all-caps   { text-transform: uppercase;  }
-.capitalize { text-transform: capitalize; }
-
-a {
-  color: $highlight;
-  text-decoration: none;
-
-  &:hover {
-    color: mix($emphasizer, $highlight, 23.6%);
-  }
-
-  &:active {
-    color: mix($dimmer, $highlight, 23.6%);
-  }
-}
-
 .underlined {
   background-image: linear-gradient(currentcolor);
   background-size: $hairline $hairline;
-  background-position: 0 1.15em;
+  background-position: 0 $underline-offset;
   background-repeat: repeat-x;
   text-shadow:
     $hairline 0 0  $background,
@@ -138,6 +132,35 @@ a {
   &.active {
     background-image: none;
     color: inherit;
+  }
+}
+
+.size-0 { font-size: 0.813rem; line-height: $line*0.727272727; }
+.size-1 { font-size: 1.000rem; line-height: $line*1.00; }
+.size-2 { font-size: 1.236rem; line-height: $line*1.00; }
+.size-3 { font-size: 1.382rem; line-height: $line*1.00; }
+.size-4 { font-size: 1.618rem; line-height: $line*1.50; }
+.size-5 { font-size: 2.150rem; line-height: $line*1.50; }
+.size-6 { font-size: 2.618rem; line-height: $line*2.00; }
+.size-7 { font-size: 4.236rem; line-height: $line*3.25; }
+
+.lighter           { font-weight: 200; }
+.light             { font-weight: 300; }
+.medium            { font-weight: 400; }
+.strong, strong, b { font-weight: 600; }
+.stronger          { font-weight: 700; }
+.strongest         { font-weight: 800; }
+
+a {
+  color: $highlight;
+  text-decoration: none;
+
+  &:hover {
+    color: mix($emphasizer, $highlight, 23.6%);
+  }
+
+  &:active {
+    color: mix($dimmer, $highlight, 23.6%);
   }
 }
 
