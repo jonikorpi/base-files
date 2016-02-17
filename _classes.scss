@@ -200,6 +200,74 @@
 .margin-left-hairline   { margin-left:   $hairline; }
 
 //
+// Negative margins
+
+.negative-margin-xxs { margin: -$spacing-xxs; }
+.negative-margin-xs  { margin: -$spacing-xs;  }
+.negative-margin-s   { margin: -$spacing-s;   }
+.negative-margin     { margin: -$spacing;     }
+.negative-margin-l   { margin: -$spacing-l;   }
+.negative-margin-xl  { margin: -$spacing-xl;  }
+.negative-margin-xxl { margin: -$spacing-xxl; }
+
+.negative-margin-v-xxs { margin: -$spacing-xxs 0; }
+.negative-margin-v-xs  { margin: -$spacing-xs 0;  }
+.negative-margin-v-s   { margin: -$spacing-s 0;   }
+.negative-margin-v     { margin: -$spacing 0;     }
+.negative-margin-v-l   { margin: -$spacing-l 0;   }
+.negative-margin-v-xl  { margin: -$spacing-xl 0;  }
+.negative-margin-v-xxl { margin: -$spacing-xxl 0; }
+
+.negative-margin-h-xxs { margin: 0 -$spacing-xxs; }
+.negative-margin-h-xs  { margin: 0 -$spacing-xs;  }
+.negative-margin-h-s   { margin: 0 -$spacing-s;   }
+.negative-margin-h     { margin: 0 -$spacing;     }
+.negative-margin-h-l   { margin: 0 -$spacing-l;   }
+.negative-margin-h-xl  { margin: 0 -$spacing-xl;  }
+.negative-margin-h-xxl { margin: 0 -$spacing-xxl; }
+
+.negative-margin-hairline   { margin: -$hairline;   }
+.negative-margin-v-hairline { margin: -$hairline 0; }
+.negative-margin-h-hairline { margin: 0 -$hairline; }
+
+.negative-margin-top-xxs { margin-top: -$spacing-xxs; }
+.negative-margin-top-xs  { margin-top: -$spacing-xs;  }
+.negative-margin-top-s   { margin-top: -$spacing-s;   }
+.negative-margin-top     { margin-top: -$spacing;     }
+.negative-margin-top-l   { margin-top: -$spacing-l;   }
+.negative-margin-top-xl  { margin-top: -$spacing-xl;  }
+.negative-margin-top-xxl { margin-top: -$spacing-xxl; }
+
+.negative-margin-right-xxs { margin-right: -$spacing-xxs; }
+.negative-margin-right-xs  { margin-right: -$spacing-xs;  }
+.negative-margin-right-s   { margin-right: -$spacing-s;   }
+.negative-margin-right     { margin-right: -$spacing;     }
+.negative-margin-right-l   { margin-right: -$spacing-l;   }
+.negative-margin-right-xl  { margin-right: -$spacing-xl;  }
+.negative-margin-right-xxl { margin-right: -$spacing-xxl; }
+
+.negative-margin-bottom-xxs { margin-bottom: -$spacing-xxs; }
+.negative-margin-bottom-xs  { margin-bottom: -$spacing-xs;  }
+.negative-margin-bottom-s   { margin-bottom: -$spacing-s;   }
+.negative-margin-bottom     { margin-bottom: -$spacing;     }
+.negative-margin-bottom-l   { margin-bottom: -$spacing-l;   }
+.negative-margin-bottom-xl  { margin-bottom: -$spacing-xl;  }
+.negative-margin-bottom-xxl { margin-bottom: -$spacing-xxl; }
+
+.negative-margin-left-xxs { margin-left: -$spacing-xxs; }
+.negative-margin-left-xs  { margin-left: -$spacing-xs;  }
+.negative-margin-left-s   { margin-left: -$spacing-s;   }
+.negative-margin-left     { margin-left: -$spacing;     }
+.negative-margin-left-l   { margin-left: -$spacing-l;   }
+.negative-margin-left-xl  { margin-left: -$spacing-xl;  }
+.negative-margin-left-xxl { margin-left: -$spacing-xxl; }
+
+.negative-margin-top-hairline    { margin-top:    -$hairline; }
+.negative-margin-right-hairline  { margin-right:  -$hairline; }
+.negative-margin-bottom-hairline { margin-bottom: -$hairline; }
+.negative-margin-left-hairline   { margin-left:   -$hairline; }
+
+//
 // Borders
 
 .borders   { border: 1px solid $border; }
