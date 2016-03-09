@@ -69,42 +69,11 @@ $alt-aside:      mix($dimmer,     $alt-body,      23.6%);
 $strong:         mix($emphasizer, $body,          23.6%);
 $alt-strong:     mix($emphasizer, $alt-body,      23.6%);
 
-.color-background    { color: $background; }
-.color-body          { color: $body; }
-.color-alt-body      { color: $alt-body; }
-.color-highlight     { color: $highlight; }
-.color-alt-highlight { color: $alt-highlight; }
-.color-off-background { color: $off-background; }
-.color-border        { color: $border; }
-.color-aside         { color: $aside; }
-.color-alt-aside     { color: $alt-aside; }
-.color-strong        { color: $strong; }
-.color-alt-strong    { color: $alt-strong; }
-
-.bg-background    { background-color: $background; }
-.bg-body          { background-color: $body; }
-.bg-alt-body      { background-color: $alt-body; }
-.bg-highlight     { background-color: $highlight; }
-.bg-alt-highlight { background-color: $alt-highlight; }
-.bg-off-background { background-color: $off-background; }
-.bg-border        { background-color: $border; }
-.bg-aside         { background-color: $aside; }
-.bg-alt-aside     { background-color: $alt-aside; }
-.bg-strong        { background-color: $strong; }
-.bg-alt-strong    { background-color: $alt-strong; }
-
-//
-// Media queries
-
-$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-
 //
 // Imports
 
 @import "reset";
 @import "classes";
-// @import "forms";
-// @import "utility-opentype"; https://github.com/kennethormandy/utility-opentype
 
 //
 // Typography
@@ -145,15 +114,8 @@ html {
 .size-6 { font-size: 2.618rem; line-height: $line*2.00; }
 .size-7 { font-size: 4.236rem; line-height: $line*3.25; }
 
-.lighter           { font-weight: 200; }
-.light             { font-weight: 300; }
-.medium            { font-weight: 400; }
-.strong, strong, b { font-weight: 600; }
-.stronger          { font-weight: 700; }
-.strongest         { font-weight: 800; }
-
 a {
-  color: $highlight;
+  color: $strong;
   text-decoration: none;
 
   &:hover {
