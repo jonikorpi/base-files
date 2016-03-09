@@ -84,7 +84,7 @@ html {
 }
 
 .underlined {
-  background-image: linear-gradient(currentcolor);
+  background-image: linear-gradient(currentcolor, currentcolor);
   background-size: $hairline $hairline;
   background-position: 0 $underline-offset;
   background-repeat: repeat-x;
