@@ -1,0 +1,75 @@
+//
+// Settings
+
+$flexbox: true;
+$font-size-multiplier: 16 / 16;
+$line: 22 / 16 * 1rem;
+
+//
+// General variables
+
+$main-easing:        cubic-bezier(0.236, 0.000, 0.236, 1.000);
+$reverse-easing:     cubic-bezier(0.618, 0.000, 0.236, 1.000);
+$loop-easing:        ease-in-out;
+
+$main-time:  200ms;
+$short-time: $main-time / 1.618;
+$loop-time:  $main-time*30;
+
+$spacing-xxxxs: $line*0.125;
+$spacing-xxxs:  $line*0.250;
+$spacing-xxs:   $line*0.375;
+$spacing-xs:    $line*0.500;
+$spacing-s:     $line*0.750;
+$spacing:       $line*1.000;
+$spacing-l:     $line*1.500;
+$spacing-xl:    $line*2.000;
+$spacing-xxl:   $line*2.500;
+$spacing-xxxl:  $line*3.000;
+$spacing-xxxxl: $line*3.500;
+
+$hairline: 1px;
+$underline-offset: 1.15em;
+
+$max-width: $line * 55;
+$main-rounding: $line*0.250;
+
+//
+// Colors
+
+$hue: 202;
+
+$hue-opposite: $hue + (360/2);
+$hue-analog:   $hue - (360/8);
+$hue-analog-2: $hue + (360/8);
+$hue-split:    $hue + (360/2) - (360/8);
+$hue-split-2:  $hue + (360/2) + (360/8);
+$hue-triad:    $hue + (360/3);
+$hue-triad-2:  $hue + (360/3*2);
+$hue-square:   $hue + (360/4);
+$hue-square-2: $hue + (360/4*3);
+
+$hue-bg:  $hue;
+$hue-fg:  $hue-split-2;
+$hue-alt: $hue-split;
+
+$colorfulness: 1.0;
+
+$dimmer:     hsl($hue-bg, 100%*$colorfulness, 05.6%);
+$emphasizer: hsl($hue-fg, 100%*$colorfulness, 94.4%);
+
+$background:    hsl($hue-bg,  50.0%*$colorfulness,  9.0%);
+$body:          hsl($hue-fg,   9.0%*$colorfulness, 61.8%);
+$alt-body:      hsl($hue-alt,  9.0%*$colorfulness, 61.8%);
+
+$highlight:     hsl($hue-fg,  76.4%, 61.8%);
+$alt-highlight: hsl($hue-alt, 76.4%, 61.8%);
+
+$off-background: mix($emphasizer, $background,    14.6%);
+$border:         mix($emphasizer, $background,    50.0%);
+
+$aside:          mix($dimmer,     $body,          23.6%);
+$alt-aside:      mix($dimmer,     $alt-body,      23.6%);
+
+$strong:         mix($emphasizer, $body,          23.6%);
+$alt-strong:     mix($emphasizer, $alt-body,      23.6%);
