@@ -18,6 +18,14 @@ ul ul, ul ol, ol ol, ol ul {
   padding-left: $line;
 }
 
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
 //
 // HTML5 element fixes
 
