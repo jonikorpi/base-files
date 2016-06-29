@@ -441,6 +441,9 @@
 //
 // Blocks
 
-.inline { display: inline; }
-.block { display: block; }
+.inline       { display: inline; }
+.block        { display: block; }
 .inline-block { display: inline-block; }
+
+.rounded { border-radius: $main-rounding; }
+.round   { border-radius: 50%; }
