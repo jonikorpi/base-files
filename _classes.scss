@@ -411,6 +411,13 @@
 .all-caps   { text-transform: uppercase;  }
 .capitalize { text-transform: capitalize; }
 
+.bold       { font-weight: bold; }
+.italic     { font-style: italic; }
+.underlined { text-decoration: underline;}
+
+//
+// Overflow
+
 .nowrap {
   white-space: nowrap;
 }
