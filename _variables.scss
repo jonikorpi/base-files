@@ -2,7 +2,7 @@
 // Settings
 
 $font-size-multiplier: 16 / 16;
-$line: 22 / 16 * 1rem;
+$line: 22 / (16 * $font-size-multiplier);
 
 //
 // General variables
@@ -13,19 +13,19 @@ $loop-easing:        ease-in-out;
 
 $main-time:  200ms;
 $short-time: $main-time / 1.618;
-
-$spacing-xxxxs: $line*0.125;
-$spacing-xxxs:  $line*0.250;
-$spacing-xxs:   $line*0.375;
-$spacing-xs:    $line*0.500;
-$spacing-s:     $line*0.750;
-$spacing:       $line*1.000;
-$spacing-l:     $line*1.500;
-$spacing-xl:    $line*2.000;
-$spacing-xxl:   $line*2.500;
-$spacing-xxxl:  $line*3.000;
-$spacing-xxxxl: $line*3.500;
 $loop-time:  $main-time * 30;
+
+$spacing-xxxxs: $line * 0.125 * 1rem;
+$spacing-xxxs:  $line * 0.250 * 1rem;
+$spacing-xxs:   $line * 0.375 * 1rem;
+$spacing-xs:    $line * 0.500 * 1rem;
+$spacing-s:     $line * 0.750 * 1rem;
+$spacing:       $line * 1.000 * 1rem;
+$spacing-l:     $line * 1.500 * 1rem;
+$spacing-xl:    $line * 2.000 * 1rem;
+$spacing-xxl:   $line * 2.500 * 1rem;
+$spacing-xxxl:  $line * 3.000 * 1rem;
+$spacing-xxxxl: $line * 3.500 * 1rem;
 
 $hairline: 1px;
 
