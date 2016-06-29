@@ -13,7 +13,6 @@ $loop-easing:        ease-in-out;
 
 $main-time:  200ms;
 $short-time: $main-time / 1.618;
-$loop-time:  $main-time*30;
 
 $spacing-xxxxs: $line*0.125;
 $spacing-xxxs:  $line*0.250;
@@ -26,9 +25,9 @@ $spacing-xl:    $line*2.000;
 $spacing-xxl:   $line*2.500;
 $spacing-xxxl:  $line*3.000;
 $spacing-xxxxl: $line*3.500;
+$loop-time:  $main-time * 30;
 
 $hairline: 1px;
-$underline-offset: 1.15em;
 
 $max-width: $line * 55;
 $main-rounding: $line*0.250;
