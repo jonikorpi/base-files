@@ -52,8 +52,8 @@ a {
 html {
   font-size: 100% * $font-size-multiplier;
   line-height: $line;
-  background: $background;
-  color: $body;
+  background: $bg;
+  color: $fg;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 

@@ -316,3 +316,180 @@
 
 .rounded { border-radius: $main-rounding; }
 .round   { border-radius: 50%; }
+
+//
+// Foreground and background colors
+
+.color-fg        { color: $fg; }
+.color-bg        { color: $bg; }
+.color-highlight { color: $highlight; }
+
+.color-1  { color: mix($bg, $fg,  5.6%); }
+.color-2  { color: mix($bg, $fg,  9.0%); }
+.color-3  { color: mix($bg, $fg, 14.6%); }
+.color-4  { color: mix($bg, $fg, 23.6%); }
+.color-5  { color: mix($bg, $fg, 38.2%); }
+.color-6  { color: mix($bg, $fg, 50.0%); }
+.color-7  { color: mix($bg, $fg, 61.8%); }
+.color-8  { color: mix($bg, $fg, 76.4%); }
+.color-9  { color: mix($bg, $fg, 85.4%); }
+.color-10 { color: mix($bg, $fg, 91.0%); }
+.color-11 { color: mix($bg, $fg, 94.4%); }
+
+.background-fg        { background-color: $fg; }
+.background-bg        { background-color: $bg; }
+.background-highlight { background-color: $highlight; }
+
+.background-1  { background-color: mix($bg, $fg,  5.6%); }
+.background-2  { background-color: mix($bg, $fg,  9.0%); }
+.background-3  { background-color: mix($bg, $fg, 14.6%); }
+.background-4  { background-color: mix($bg, $fg, 23.6%); }
+.background-5  { background-color: mix($bg, $fg, 38.2%); }
+.background-6  { background-color: mix($bg, $fg, 50.0%); }
+.background-7  { background-color: mix($bg, $fg, 61.8%); }
+.background-8  { background-color: mix($bg, $fg, 76.4%); }
+.background-9  { background-color: mix($bg, $fg, 85.4%); }
+.background-10 { background-color: mix($bg, $fg, 91.0%); }
+.background-11 { background-color: mix($bg, $fg, 94.4%); }
+
+.border-fg        { border-color: $fg; }
+.border-bg        { border-color: $bg; }
+.border-highlight { border-color: $highlight; }
+
+.border-1  { border-color: mix($bg, $fg,  5.6%); }
+.border-2  { border-color: mix($bg, $fg,  9.0%); }
+.border-3  { border-color: mix($bg, $fg, 14.6%); }
+.border-4  { border-color: mix($bg, $fg, 23.6%); }
+.border-5  { border-color: mix($bg, $fg, 38.2%); }
+.border-6  { border-color: mix($bg, $fg, 50.0%); }
+.border-7  { border-color: mix($bg, $fg, 61.8%); }
+.border-8  { border-color: mix($bg, $fg, 76.4%); }
+.border-9  { border-color: mix($bg, $fg, 85.4%); }
+.border-10 { border-color: mix($bg, $fg, 91.0%); }
+.border-11 { border-color: mix($bg, $fg, 94.4%); }
+
+//
+// Primary and secondary colors blended with background
+
+.color-red-bg       { color: mix($bg, rgb(255,   0,   0), $bg-mix-rate); }
+.color-yellow-bg    { color: mix($bg, rgb(255, 255,   0), $bg-mix-rate); }
+.color-magenta-bg   { color: mix($bg, rgb(255,   0, 255), $bg-mix-rate); }
+.color-green-bg     { color: mix($bg, rgb(  0, 255,   0), $bg-mix-rate); }
+.color-cyan-bg      { color: mix($bg, rgb(  0, 255, 255), $bg-mix-rate); }
+.color-blue-bg      { color: mix($bg, rgb(  0,   0, 255), $bg-mix-rate); }
+.color-orange-bg    { color: mix($bg, rgb(255, 158,   0), $bg-mix-rate); }
+.color-pink-bg      { color: mix($bg, rgb(255,   0, 158), $bg-mix-rate); }
+.color-lime-bg      { color: mix($bg, rgb(158, 255,   0), $bg-mix-rate); }
+.color-turquoise-bg { color: mix($bg, rgb(  0, 255, 158), $bg-mix-rate); }
+.color-purple-bg    { color: mix($bg, rgb(158,   0, 255), $bg-mix-rate); }
+.color-navy-bg      { color: mix($bg, rgb(  0, 158, 255), $bg-mix-rate); }
+
+.background-red-bg       { background-color: mix($bg, rgb(255,   0,   0), $bg-mix-rate); }
+.background-yellow-bg    { background-color: mix($bg, rgb(255, 255,   0), $bg-mix-rate); }
+.background-magenta-bg   { background-color: mix($bg, rgb(255,   0, 255), $bg-mix-rate); }
+.background-green-bg     { background-color: mix($bg, rgb(  0, 255,   0), $bg-mix-rate); }
+.background-cyan-bg      { background-color: mix($bg, rgb(  0, 255, 255), $bg-mix-rate); }
+.background-blue-bg      { background-color: mix($bg, rgb(  0,   0, 255), $bg-mix-rate); }
+.background-orange-bg    { background-color: mix($bg, rgb(255, 158,   0), $bg-mix-rate); }
+.background-pink-bg      { background-color: mix($bg, rgb(255,   0, 158), $bg-mix-rate); }
+.background-lime-bg      { background-color: mix($bg, rgb(158, 255,   0), $bg-mix-rate); }
+.background-turquoise-bg { background-color: mix($bg, rgb(  0, 255, 158), $bg-mix-rate); }
+.background-purple-bg    { background-color: mix($bg, rgb(158,   0, 255), $bg-mix-rate); }
+.background-navy-bg      { background-color: mix($bg, rgb(  0, 158, 255), $bg-mix-rate); }
+
+.border-red-bg       { border-color: mix($bg, rgb(255,   0,   0), $bg-mix-rate); }
+.border-yellow-bg    { border-color: mix($bg, rgb(255, 255,   0), $bg-mix-rate); }
+.border-magenta-bg   { border-color: mix($bg, rgb(255,   0, 255), $bg-mix-rate); }
+.border-green-bg     { border-color: mix($bg, rgb(  0, 255,   0), $bg-mix-rate); }
+.border-cyan-bg      { border-color: mix($bg, rgb(  0, 255, 255), $bg-mix-rate); }
+.border-blue-bg      { border-color: mix($bg, rgb(  0,   0, 255), $bg-mix-rate); }
+.border-orange-bg    { border-color: mix($bg, rgb(255, 158,   0), $bg-mix-rate); }
+.border-pink-bg      { border-color: mix($bg, rgb(255,   0, 158), $bg-mix-rate); }
+.border-lime-bg      { border-color: mix($bg, rgb(158, 255,   0), $bg-mix-rate); }
+.border-turquoise-bg { border-color: mix($bg, rgb(  0, 255, 158), $bg-mix-rate); }
+.border-purple-bg    { border-color: mix($bg, rgb(158,   0, 255), $bg-mix-rate); }
+.border-navy-bg      { border-color: mix($bg, rgb(  0, 158, 255), $bg-mix-rate); }
+
+//
+// Primary and secondary colors blended with foreground
+
+.color-red-fg       { color: mix($fg, rgb(255,   0,   0), $fg-mix-rate); }
+.color-yellow-fg    { color: mix($fg, rgb(255, 255,   0), $fg-mix-rate); }
+.color-magenta-fg   { color: mix($fg, rgb(255,   0, 255), $fg-mix-rate); }
+.color-green-fg     { color: mix($fg, rgb(  0, 255,   0), $fg-mix-rate); }
+.color-cyan-fg      { color: mix($fg, rgb(  0, 255, 255), $fg-mix-rate); }
+.color-blue-fg      { color: mix($fg, rgb(  0,   0, 255), $fg-mix-rate); }
+.color-orange-fg    { color: mix($fg, rgb(255, 158,   0), $fg-mix-rate); }
+.color-pink-fg      { color: mix($fg, rgb(255,   0, 158), $fg-mix-rate); }
+.color-lime-fg      { color: mix($fg, rgb(158, 255,   0), $fg-mix-rate); }
+.color-turquoise-fg { color: mix($fg, rgb(  0, 255, 158), $fg-mix-rate); }
+.color-purple-fg    { color: mix($fg, rgb(158,   0, 255), $fg-mix-rate); }
+.color-navy-fg      { color: mix($fg, rgb(  0, 158, 255), $fg-mix-rate); }
+
+.background-red-fg       { background-color: mix($fg, rgb(255,   0,   0), $fg-mix-rate); }
+.background-yellow-fg    { background-color: mix($fg, rgb(255, 255,   0), $fg-mix-rate); }
+.background-magenta-fg   { background-color: mix($fg, rgb(255,   0, 255), $fg-mix-rate); }
+.background-green-fg     { background-color: mix($fg, rgb(  0, 255,   0), $fg-mix-rate); }
+.background-cyan-fg      { background-color: mix($fg, rgb(  0, 255, 255), $fg-mix-rate); }
+.background-blue-fg      { background-color: mix($fg, rgb(  0,   0, 255), $fg-mix-rate); }
+.background-orange-fg    { background-color: mix($fg, rgb(255, 158,   0), $fg-mix-rate); }
+.background-pink-fg      { background-color: mix($fg, rgb(255,   0, 158), $fg-mix-rate); }
+.background-lime-fg      { background-color: mix($fg, rgb(158, 255,   0), $fg-mix-rate); }
+.background-turquoise-fg { background-color: mix($fg, rgb(  0, 255, 158), $fg-mix-rate); }
+.background-purple-fg    { background-color: mix($fg, rgb(158,   0, 255), $fg-mix-rate); }
+.background-navy-fg      { background-color: mix($fg, rgb(  0, 158, 255), $fg-mix-rate); }
+
+.border-red-fg       { border-color: mix($fg, rgb(255,   0,   0), $fg-mix-rate); }
+.border-yellow-fg    { border-color: mix($fg, rgb(255, 255,   0), $fg-mix-rate); }
+.border-magenta-fg   { border-color: mix($fg, rgb(255,   0, 255), $fg-mix-rate); }
+.border-green-fg     { border-color: mix($fg, rgb(  0, 255,   0), $fg-mix-rate); }
+.border-cyan-fg      { border-color: mix($fg, rgb(  0, 255, 255), $fg-mix-rate); }
+.border-blue-fg      { border-color: mix($fg, rgb(  0,   0, 255), $fg-mix-rate); }
+.border-orange-fg    { border-color: mix($fg, rgb(255, 158,   0), $fg-mix-rate); }
+.border-pink-fg      { border-color: mix($fg, rgb(255,   0, 158), $fg-mix-rate); }
+.border-lime-fg      { border-color: mix($fg, rgb(158, 255,   0), $fg-mix-rate); }
+.border-turquoise-fg { border-color: mix($fg, rgb(  0, 255, 158), $fg-mix-rate); }
+.border-purple-fg    { border-color: mix($fg, rgb(158,   0, 255), $fg-mix-rate); }
+.border-navy-fg      { border-color: mix($fg, rgb(  0, 158, 255), $fg-mix-rate); }
+
+//
+// Primary and secondary colors blended with highlight
+
+.color-red-highlight       { color: mix($highlight, rgb(255,   0,   0), $highlight-mix-rate); }
+.color-yellow-highlight    { color: mix($highlight, rgb(255, 255,   0), $highlight-mix-rate); }
+.color-magenta-highlight   { color: mix($highlight, rgb(255,   0, 255), $highlight-mix-rate); }
+.color-green-highlight     { color: mix($highlight, rgb(  0, 255,   0), $highlight-mix-rate); }
+.color-cyan-highlight      { color: mix($highlight, rgb(  0, 255, 255), $highlight-mix-rate); }
+.color-blue-highlight      { color: mix($highlight, rgb(  0,   0, 255), $highlight-mix-rate); }
+.color-orange-highlight    { color: mix($highlight, rgb(255, 158,   0), $highlight-mix-rate); }
+.color-pink-highlight      { color: mix($highlight, rgb(255,   0, 158), $highlight-mix-rate); }
+.color-lime-highlight      { color: mix($highlight, rgb(158, 255,   0), $highlight-mix-rate); }
+.color-turquoise-highlight { color: mix($highlight, rgb(  0, 255, 158), $highlight-mix-rate); }
+.color-purple-highlight    { color: mix($highlight, rgb(158,   0, 255), $highlight-mix-rate); }
+.color-navy-highlight      { color: mix($highlight, rgb(  0, 158, 255), $highlight-mix-rate); }
+
+.background-red-highlight       { background-color: mix($highlight, rgb(255,   0,   0), $highlight-mix-rate); }
+.background-yellow-highlight    { background-color: mix($highlight, rgb(255, 255,   0), $highlight-mix-rate); }
+.background-magenta-highlight   { background-color: mix($highlight, rgb(255,   0, 255), $highlight-mix-rate); }
+.background-green-highlight     { background-color: mix($highlight, rgb(  0, 255,   0), $highlight-mix-rate); }
+.background-cyan-highlight      { background-color: mix($highlight, rgb(  0, 255, 255), $highlight-mix-rate); }
+.background-blue-highlight      { background-color: mix($highlight, rgb(  0,   0, 255), $highlight-mix-rate); }
+.background-orange-highlight    { background-color: mix($highlight, rgb(255, 158,   0), $highlight-mix-rate); }
+.background-pink-highlight      { background-color: mix($highlight, rgb(255,   0, 158), $highlight-mix-rate); }
+.background-lime-highlight      { background-color: mix($highlight, rgb(158, 255,   0), $highlight-mix-rate); }
+.background-turquoise-highlight { background-color: mix($highlight, rgb(  0, 255, 158), $highlight-mix-rate); }
+.background-purple-highlight    { background-color: mix($highlight, rgb(158,   0, 255), $highlight-mix-rate); }
+.background-navy-highlight      { background-color: mix($highlight, rgb(  0, 158, 255), $highlight-mix-rate); }
+
+.border-red-highlight       { border-color: mix($highlight, rgb(255,   0,   0), $highlight-mix-rate); }
+.border-yellow-highlight    { border-color: mix($highlight, rgb(255, 255,   0), $highlight-mix-rate); }
+.border-magenta-highlight   { border-color: mix($highlight, rgb(255,   0, 255), $highlight-mix-rate); }
+.border-green-highlight     { border-color: mix($highlight, rgb(  0, 255,   0), $highlight-mix-rate); }
+.border-cyan-highlight      { border-color: mix($highlight, rgb(  0, 255, 255), $highlight-mix-rate); }
+.border-blue-highlight      { border-color: mix($highlight, rgb(  0,   0, 255), $highlight-mix-rate); }
+.border-orange-highlight    { border-color: mix($highlight, rgb(255, 158,   0), $highlight-mix-rate); }
+.border-pink-highlight      { border-color: mix($highlight, rgb(255,   0, 158), $highlight-mix-rate); }
+.border-lime-highlight      { border-color: mix($highlight, rgb(158, 255,   0), $highlight-mix-rate); }
+.border-turquoise-highlight { border-color: mix($highlight, rgb(  0, 255, 158), $highlight-mix-rate); }
+.border-purple-highlight    { border-color: mix($highlight, rgb(158,   0, 255), $highlight-mix-rate); }
+.border-navy-highlight      { border-color: mix($highlight, rgb(  0, 158, 255), $highlight-mix-rate); }
