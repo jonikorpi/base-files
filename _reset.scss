@@ -90,16 +90,16 @@ img {
 
 button {
   overflow: visible;
-  cursor: pointer;
 }
 
 button,
-input[type="submit"] {
+[type="submit"] {
   appearance: none;
   background: none;
   border: none;
   border-radius: 0;
-  white-space: nowrap;
+  cursor: pointer;
+  white-space: normal;
 }
 
 [disabled] {
