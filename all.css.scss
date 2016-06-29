@@ -16,28 +16,6 @@ html {
   font-weight: 400;
 }
 
-.underlined {
-  background-image: linear-gradient(currentcolor, currentcolor);
-  background-size: $hairline $hairline;
-  background-position: 0 $underline-offset;
-  background-repeat: repeat-x;
-  text-shadow:
-    $hairline 0 0  $background,
-    -$hairline 0 0 $background
-  ;
-
-  &:hover,
-  &:focus {
-    background-image: none;
-  }
-
-  &:active,
-  &.active {
-    background-image: none;
-    color: inherit;
-  }
-}
-
 .size-0 { font-size: 0.813rem; line-height: $line*0.727272727; }
 .size-1 { font-size: 1.000rem; line-height: $line*1.00; }
 .size-2 { font-size: 1.236rem; line-height: $line*1.00; }
@@ -49,14 +27,13 @@ html {
 
 a {
   color: $strong;
-  text-decoration: none;
 
   &:hover {
-    color: mix($emphasizer, $highlight, 23.6%);
+
   }
 
   &:active {
-    color: mix($dimmer, $highlight, 23.6%);
+
   }
 }
 
@@ -72,12 +49,6 @@ a {
 //
 // Root styles
 
-* {
-  transition-property: transform, opacity;
-  transition-duration: $main-time;
-  transition-timing-function: $main-easing;
-}
-
 html {
   font-size: 100% * $font-size-multiplier;
   line-height: $line;
@@ -89,8 +60,8 @@ html {
 body {
   margin: 0 auto;
   max-width: 100%;
-  // overflow: hidden;
-  // overflow-y: visible;
+  overflow: hidden;
+  overflow-y: visible;
 }
 
 /////////////////////////////////////////////////////////
