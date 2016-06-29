@@ -126,6 +126,7 @@ textarea {
   overflow: auto;
   resize: vertical;
   display: block;
+  min-height: $line * 3;
 }
 
 //
