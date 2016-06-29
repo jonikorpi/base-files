@@ -16,14 +16,14 @@ html {
   font-weight: 400;
 }
 
-.size-0 { font-size: 0.813rem; line-height: $line*0.727272727; }
-.size-1 { font-size: 1.000rem; line-height: $line*1.00; }
-.size-2 { font-size: 1.236rem; line-height: $line*1.00; }
-.size-3 { font-size: 1.382rem; line-height: $line*1.00; }
-.size-4 { font-size: 1.618rem; line-height: $line*1.50; }
-.size-5 { font-size: 2.150rem; line-height: $line*1.50; }
-.size-6 { font-size: 2.618rem; line-height: $line*2.00; }
-.size-7 { font-size: 4.236rem; line-height: $line*3.25; }
+.size-0 { font-size: 0.813rem; }
+.size-1 { font-size: 1.000rem; }
+.size-2 { font-size: 1.236rem; }
+.size-3 { font-size: 1.382rem; }
+.size-4 { font-size: 1.618rem; }
+.size-5 { font-size: 2.150rem; }
+.size-6 { font-size: 2.618rem; }
+.size-7 { font-size: 4.236rem; }
 
 a {
   color: $strong;

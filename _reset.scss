@@ -15,7 +15,7 @@
 }
 
 ul ul, ul ol, ol ol, ol ul {
-  padding-left: $line;
+  padding-left: $spacing;
 }
 
 strong, b {
@@ -126,7 +126,7 @@ textarea {
   overflow: auto;
   resize: vertical;
   display: block;
-  min-height: $line * 3;
+  min-height: $spacing * 3;
 }
 
 //
