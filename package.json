@@ -1,0 +1,17 @@
+{
+  "name": "jonikorpi-base-files",
+  "version": "1.0.0",
+  "description": "CSS and HTML starter kit for new projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonikorpi/base-files.git"
+  },
+  "style": [
+    "reset.css",
+    "classes.css",
+    "main.css",
+  ],
+  "author": "@jonikorpi",
+  "license": "MIT",
+  "homepage": "https://github.com/jonikorpi/base-files#readme"
+}
