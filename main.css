@@ -4,7 +4,7 @@
 /*
   1 rem == baseline grid unit.
   The calc() function flexes the baseline grid,
-  so everything is automatically a bigger on larger screens.
+  so everything is automatically a bit bigger on larger screens.
   (http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010) */
 
 html {
