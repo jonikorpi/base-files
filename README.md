@@ -21,7 +21,7 @@
 - Some easy-to-forget meta tags and such.
 
 ## Things to note:
-- The primary idea is to avoid writing new CSS or having to look into CSS files to style new things. `<header class="position-all fixed padding-1 color-5 bg-1">` instead of `<header class="masthead">`.
-- The secondary idea is to avoid having to write media queries. The flexing baseline grid and typography presets help with this a lot.
-- The CSS is terrible without some sort of templating/component system like React. Without one you'll end up copy-pasting and micromanaging class names a lot.
+- The primary idea is to avoid having to touch CSS files to style new things. `<header class="position-all fixed padding-1 color-5 bg-1 space-children-1">` instead of `<header class="masthead">`.
+- The secondary idea is to avoid having to write media queries. The flexing baseline grid and the typography presets help with this a lot.
+- This CSS is terrible without some sort of templating/component system like React. Without one you'll end up copy-pasting class names a lot.
 - The CSS assumes it gets run through [autoprefixer](https://github.com/postcss/autoprefixer).
