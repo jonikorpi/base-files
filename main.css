@@ -27,17 +27,6 @@ html {
 .size-1-5     { line-height: 1.50rem; font-size: calc(1.50rem * 0.910); }
 .size-2       { line-height: 2.00rem; font-size: calc(2.00rem * 1.000); }
 
-/*
-  Sizes that fit the viewport width.
-  Awesome on large screens yet still readable at 320px.
-  (Adjust the line-heights to suit your font.) */
-
-.size-fit-1 { line-height: 1.333; font-size: 3.6vw; }
-.size-fit-2 { line-height: 1.333; font-size: 4.7vw; }
-.size-fit-3 { line-height: 1.200; font-size: 6.6vw; }
-.size-fit-4 { line-height: 1.000; font-size: 8.4vw; }
-.size-fit-5 { line-height: 0.965; font-size: 12vw;  }
-
 .grid-overlay {
   background-image:
     linear-gradient(rgba(255,0,0,0.236), transparent 9%),
@@ -52,6 +41,17 @@ html {
     0.25rem 100%
   ;
 }
+
+/*
+  Sizes that fit the viewport width.
+  Awesome on large screens yet still readable at 320px.
+  (Adjust the line-heights to suit your font.) */
+
+.size-fit-1 { line-height: 1.333; font-size: 3.6vw; }
+.size-fit-2 { line-height: 1.333; font-size: 4.7vw; }
+.size-fit-3 { line-height: 1.200; font-size: 6.6vw; }
+.size-fit-4 { line-height: 1.000; font-size: 8.4vw; }
+.size-fit-5 { line-height: 0.965; font-size: 12vw;  }
 
 ::selection {
 
