@@ -1,8 +1,5 @@
-//
-// Normalization & resets for annoyances
-
-//
-// Resets annoying things
+/*
+  Resets annoying things */
 
 * {
   margin: 0;
@@ -15,7 +12,7 @@
 }
 
 ul ul, ul ol, ol ol, ol ul {
-  padding-left: $spacing;
+  padding-left: 1rem;
 }
 
 strong, b {
@@ -26,8 +23,8 @@ em, i {
   font-style: italic;
 }
 
-//
-// HTML5 element fixes
+/*
+  HTML5 element fixes */
 
 article, aside, details,
 figcaption, figure, footer,
@@ -38,8 +35,8 @@ video, audio, canvas {
   display: block;
 }
 
-//
-// Hides things that should be hidden
+/*
+  Hides things that should be hidden */
 
 [hidden],
 template,
@@ -48,8 +45,8 @@ audio:not([controls]) {
   height: 0;
 }
 
-//
-// Misc element fixes
+/*
+  Misc element fixes */
 
 a {
   background-color: transparent;
@@ -77,16 +74,17 @@ hr {
   height: 0;
 }
 
-//
-// Image fixes
+/*
+  Image fixes */
 
-img {
+img,
+svg {
   border: none;
   display: block;
 }
 
-//
-// Buttons and forms
+/*
+  Buttons and forms */
 
 button {
   overflow: visible;
@@ -126,24 +124,26 @@ textarea {
   overflow: auto;
   resize: vertical;
   display: block;
-  min-height: $spacing * 3;
+  min-height: 3rem;
 }
 
-//
-// Tables
+/*
+  Tables */
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  min-width: 100%;
 }
 
 td,
 th {
   padding: 0;
+  text-align: left;
 }
 
-//
-// Touchable things (used in addition to FastClick)
+/*
+  Touchable things */
 
 a,
 button,

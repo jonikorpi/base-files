@@ -1,0 +1,66 @@
+@charset "utf-8";
+@viewport {width: device-width;}
+
+/*
+  1 rem == baseline grid unit.
+  The calc() function flexes the baseline grid,
+  so everything is automatically a bigger on larger screens.
+  (http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010) */
+
+html {
+  font-size: calc(0.875em + 0.5vw + 0.5vh + 0.25vmin);
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif
+  ;
+}
+
+/*
+  Sizes aligned to the baseline grid.
+  Useful and readable at all screen sizes above 320px.
+  (Adjust the font-size multipliers to suit your font.) */
+
+.size-0-75    { line-height: 0.75rem; font-size: calc(0.75rem * 0.764); }
+.size-1, body { line-height: 1.00rem; font-size: calc(1.00rem * 0.764); }
+.size-1-25    { line-height: 1.25rem; font-size: calc(1.25rem * 0.854); }
+.size-1-5     { line-height: 1.50rem; font-size: calc(1.50rem * 0.910); }
+.size-2       { line-height: 2.00rem; font-size: calc(2.00rem * 1.000); }
+
+/*
+  Sizes that fit the viewport width.
+  Awesome on large screens yet still readable at 320px.
+  (Adjust the line-heights to suit your font.) */
+
+.size-fit-1 { line-height: 1.333; font-size: 3.6vw; }
+.size-fit-2 { line-height: 1.333; font-size: 4.7vw; }
+.size-fit-3 { line-height: 1.200; font-size: 6.6vw; }
+.size-fit-4 { line-height: 1.000; font-size: 8.4vw; }
+.size-fit-5 { line-height: 0.965; font-size: 12vw;  }
+
+::selection {
+
+}
+
+::placeholder {
+
+}
+
+/*
+  Root styles */
+
+html {
+  background: black;
+  color: white;
+  /*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
+}
+
+body {
+  max-width: 100%;
+  overflow: hidden;
+  overflow-y: visible;
+}
+
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
