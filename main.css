@@ -38,6 +38,21 @@ html {
 .size-fit-4 { line-height: 1.000; font-size: 8.4vw; }
 .size-fit-5 { line-height: 0.965; font-size: 12vw;  }
 
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(255,0,0,0.236), transparent 9%),
+    linear-gradient(to right, rgba(255,0,0,0.236), transparent 9%),
+    linear-gradient(rgba(255,0,0,0.236), transparent 9%),
+    linear-gradient(to right, rgba(255,0,0,0.236), transparent 9%)
+  ;
+  background-size:
+    100% 1rem,
+    1rem 100%,
+    100% 0.25rem,
+    0.25rem 100%
+  ;
+}
+
 ::selection {
 
 }
