@@ -9,7 +9,7 @@
   "style": [
     "reset.css",
     "classes.css",
-    "main.css",
+    "main.css"
   ],
   "author": "@jonikorpi",
   "license": "MIT",
