@@ -98,45 +98,45 @@
   Automatical margins between child elements
   (aligned to a 1rem baseline grid) */
 
-.space-children-x-0-125 > * + * { margin-left: 0.125rem; }
-.space-children-x-0-25  > * + * { margin-left: 0.25rem; }
-.space-children-x-0-5   > * + * { margin-left: 0.5rem; }
-.space-children-x-0-75  > * + * { margin-left: 0.75rem; }
-.space-children-x-1     > * + * { margin-left: 1rem; }
-.space-children-x-1-25  > * + * { margin-left: 1.25rem; }
-.space-children-x-1-5   > * + * { margin-left: 1.5rem; }
-.space-children-x-2     > * + * { margin-left: 2rem; }
-.space-children-x-3     > * + * { margin-left: 3rem; }
-.space-children-x-4     > * + * { margin-left: 4rem; }
-.space-children-x-5     > * + * { margin-left: 5rem; }
+.child-margins-x-0-125 > * + * { margin-left: 0.125rem; }
+.child-margins-x-0-25  > * + * { margin-left: 0.25rem; }
+.child-margins-x-0-5   > * + * { margin-left: 0.5rem; }
+.child-margins-x-0-75  > * + * { margin-left: 0.75rem; }
+.child-margins-x-1     > * + * { margin-left: 1rem; }
+.child-margins-x-1-25  > * + * { margin-left: 1.25rem; }
+.child-margins-x-1-5   > * + * { margin-left: 1.5rem; }
+.child-margins-x-2     > * + * { margin-left: 2rem; }
+.child-margins-x-3     > * + * { margin-left: 3rem; }
+.child-margins-x-4     > * + * { margin-left: 4rem; }
+.child-margins-x-5     > * + * { margin-left: 5rem; }
 
-.space-children-y-0-125 > * + * { margin-top: 0.125rem; }
-.space-children-y-0-25  > * + * { margin-top: 0.25rem; }
-.space-children-y-0-5   > * + * { margin-top: 0.5rem; }
-.space-children-y-0-75  > * + * { margin-top: 0.75rem; }
-.space-children-y-1     > * + * { margin-top: 1rem; }
-.space-children-y-1-25  > * + * { margin-top: 1.25rem; }
-.space-children-y-1-5   > * + * { margin-top: 1.5rem; }
-.space-children-y-2     > * + * { margin-top: 2rem; }
-.space-children-y-3     > * + * { margin-top: 3rem; }
-.space-children-y-4     > * + * { margin-top: 4rem; }
-.space-children-y-5     > * + * { margin-top: 5rem; }
+.child-margins-y-0-125 > * + * { margin-top: 0.125rem; }
+.child-margins-y-0-25  > * + * { margin-top: 0.25rem; }
+.child-margins-y-0-5   > * + * { margin-top: 0.5rem; }
+.child-margins-y-0-75  > * + * { margin-top: 0.75rem; }
+.child-margins-y-1     > * + * { margin-top: 1rem; }
+.child-margins-y-1-25  > * + * { margin-top: 1.25rem; }
+.child-margins-y-1-5   > * + * { margin-top: 1.5rem; }
+.child-margins-y-2     > * + * { margin-top: 2rem; }
+.child-margins-y-3     > * + * { margin-top: 3rem; }
+.child-margins-y-4     > * + * { margin-top: 4rem; }
+.child-margins-y-5     > * + * { margin-top: 5rem; }
 
-.space-children-x-hairline > * + * { margin-left: 1px; }
-.space-children-y-hairline > * + * { margin-top:  1px; }
+.child-margins-x-hairline > * + * { margin-left: 1px; }
+.child-margins-y-hairline > * + * { margin-top:  1px; }
 
 /*
   Automatical borders around child elements */
 
-.fence-children > *,
-.fence-children-x    > *,
-.fence-children-y    > * { border: 0 solid; }
+.child-borders > *,
+.child-borders-x    > *,
+.child-borders-y    > * { border: 0 solid; }
 
-.fence-children    { border: 0 solid; border-width: 1px 0 0 1px; }
-.fence-children > * + * { border-width: 0 1px 1px 0; }
+.child-borders    { border: 0 solid; border-width: 1px 0 0 1px; }
+.child-borders > * + * { border-width: 0 1px 1px 0; }
 
-.fence-children-x > * + * { border-left-width: 1px; }
-.fence-children-y > * + * { border-top-width:  1px; }
+.child-borders-x > * + * { border-left-width: 1px; }
+.child-borders-y > * + * { border-top-width:  1px; }
 
 /*
   Paddings, used like this:

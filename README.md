@@ -46,7 +46,7 @@ import "jonikorpi-base-files/main.css";
 You'll probably want to edit main.css, though, so I guess you'll have to make a copy of it in your app and import that instead.
 
 ## Things to note:
-- The primary idea is to avoid having to touch CSS files to style new things. `<header class="position-top fixed padding-1 color-5 bg-1 space-children-x-1">` instead of `<header class="masthead">`.
+- The primary idea is to avoid having to touch CSS files to style new things. `<header class="position-top fixed padding-1 color-5 bg-1 child-margins-x-1">` instead of `<header class="masthead">`.
 - The secondary idea is to avoid having to write media queries. The flexing baseline grid and the typography presets help with this a lot.
 - This CSS is terrible without some sort of templating/component system like React. Without one you'll end up copy-pasting class names a lot.
 - The CSS assumes it gets run through [autoprefixer](https://github.com/postcss/autoprefixer).
