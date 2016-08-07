@@ -2,21 +2,21 @@
 
 ## Contents
 
-### reset.css
+### reset.css (non-project-specific)
 - A CSS reset based on [Normalize](https://necolas.github.io/normalize.css/) and the * selector.
 - Focused on making browser default styling less annoying.
 
-### main.css
-- Some easy-to-forget things you should always set, like `::selection`.
-- Typography classes for body text and UI elements: aligned to [a slightly flexing](http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010) 1rem baseline grid, readable and useful at all screen widths above 320px.
-- Typography classes for massive headings and such: scaled to always fit the screen width, but still readable at 320px.
-
-### classes.css
+### classes.css (non-project-specific)
 - Flexbox-classes that try to make sense of its weird syntax.
 - Magical [owl selector](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) classes for automatically adding margins between and borders around child elements.
-- [Tachyons](http://tachyons.io/)-inspired classes for paddings and margins, aligned to the 1rem baseline grid mentioned above.
-- A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
+- [Tachyons](http://tachyons.io/)-inspired classes for paddings and margins, aligned to a 1rem baseline grid.
 - Entry animation classes (played once when the element is added to the DOM).
+
+### main.css (project-specific)
+- Typography classes for body text and UI elements: aligned to [a slightly flexing](http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010) 1rem baseline grid. Readable and useful at all screen widths above 320px.
+- Typography classes for massive headings and such: scaled to always fit the screen width, but still readable at 320px.
+- A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
+- Some easy-to-forget things you should always set, like `::selection`.
 
 ### index.html
 - A plain typography test for the all the CSS mentioned above.
