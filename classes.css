@@ -170,6 +170,11 @@
 .padding-bottom { padding-top:   0; padding-right:  0; padding-left:   0; }
 .padding-left   { padding-top:   0; padding-right:  0; padding-bottom: 0; }
 
+.padding-top-0    { padding-top: 0; }
+.padding-right-0  { padding-right: 0; }
+.padding-bottom-0 { padding-bottom: 0; }
+.padding-left-0   { padding-left: 0; }
+
 .padding-x { padding-top:  0; padding-bottom: 0; }
 .padding-y { padding-left: 0; padding-right:  0; }
 
@@ -212,6 +217,11 @@
 .margin-bottom { margin-top:   0; margin-right:  0; margin-left:   0; }
 .margin-left   { margin-top:   0; margin-right:  0; margin-bottom: 0; }
 
+.margin-top-0    { margin-top: 0; }
+.margin-right-0  { margin-right: 0; }
+.margin-bottom-0 { margin-bottom: 0; }
+.margin-left-0   { margin-left: 0; }
+
 .margin-x { margin-top:  0; margin-bottom: 0; }
 .margin-y { margin-left: 0; margin-right:  0; }
 
@@ -221,13 +231,18 @@
 
 .border   { border: 1px solid; }
 
-.border-y { border: solid; border-width: 1px 0;   }
-.border-x { border: solid; border-width: 0   1px; }
-
 .border-left   { border-left:   1px solid; }
 .border-top    { border-top:    1px solid; }
 .border-right  { border-right:  1px solid; }
 .border-bottom { border-bottom: 1px solid; }
+
+.border-top-0    { border-top-width: 0; }
+.border-right-0  { border-right-width: 0; }
+.border-bottom-0 { border-bottom-width: 0; }
+.border-left-0   { border-left-width: 0; }
+
+.border-y { border: solid; border-width: 1px 0;   }
+.border-x { border: solid; border-width: 0   1px; }
 
 .dotted { border-style: dotted; }
 .dashed { border-style: dashed; }

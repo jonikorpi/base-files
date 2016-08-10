@@ -139,6 +139,22 @@ html {
 .fill-bright-5   { fill:             #E7E860; }
 .stroke-bright-5 { stroke:           #E7E860; }
 
+/* Other */
+
+.color-none  { color:            none; }
+.bg-none     { background-color: none; }
+.border-none { border-color:     none; }
+.fill-none   { fill:             none; }
+.stroke-none { stroke:           none; }
+
+.color-transparent  { color:            transparent; }
+.bg-transparent     { background-color: transparent; }
+.border-transparent { border-color:     transparent; }
+
+.color-inherit  { color:            inherit; }
+.bg-inherit     { background-color: inherit; }
+.border-inherit { border-color:     inherit; }
+
 /*
   Entry animations
   (Played once when the element appears in the DOM.) */
