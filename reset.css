@@ -93,7 +93,8 @@ button {
 }
 
 button,
-[type="submit"] {
+[type="submit"],
+[type="reset"] {
   appearance: none;
   background: none;
   border: none;
@@ -120,6 +121,11 @@ input[type="search"] {
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+input {
+  background: none;
+  border: none;
 }
 
 textarea {
