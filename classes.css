@@ -132,11 +132,11 @@
 /*
   Automatical borders around child elements */
 
-.child-borders > *,
-.child-borders-x    > *,
-.child-borders-y    > * { border: 0 solid; }
+.child-borders   > *,
+.child-borders-x > *,
+.child-borders-y > * { border: 0 solid; }
 
-.child-borders    { border: 0 solid; border-width: 1px 0 0 1px; }
+.child-borders         { border: 0 solid; border-width: 1px 0 0 1px; }
 .child-borders > * + * { border-width: 0 1px 1px 0; }
 
 .child-borders-x > * + * { border-left-width: 1px; }
