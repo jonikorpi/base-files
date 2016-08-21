@@ -155,6 +155,9 @@ html {
 .bg-inherit     { background-color: inherit; }
 .border-inherit { border-color:     inherit; }
 
+.bg-currentcolor     { background-color: currentcolor; }
+.border-currentcolor { border-color:     currentcolor; }
+
 /*
   Entry animations
   (Played once when the element appears in the DOM.) */
