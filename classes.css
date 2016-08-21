@@ -304,6 +304,9 @@
 .no-events { pointer-events: none; }
 .events    { pointer-events: all;  }
 
+.no-user-select { user-select: none; }
+.user-select    { user-select: none; }
+
 /*
   Useful typography classes */
 
