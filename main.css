@@ -28,11 +28,11 @@ html {
   Useful and readable at all screen sizes above 320px.
   Adjust the font-size multipliers to suit your font. */
 
-.size-0-75    { line-height: 0.75rem; font-size: calc(0.75rem * 0.764); }
-.size-1, body { line-height: 1.00rem; font-size: calc(1.00rem * 0.764); }
-.size-1-25    { line-height: 1.25rem; font-size: calc(1.25rem * 0.854); }
-.size-1-5     { line-height: 1.50rem; font-size: calc(1.50rem * 0.910); }
-.size-2       { line-height: 2.00rem; font-size: calc(2.00rem * 1.000); }
+.size-0-75    { line-height: 0.75rem; font-size: 0.6405rem; }
+.size-1, body { line-height: 1.00rem; font-size: 0.8rem; }
+.size-1-25    { line-height: 1.25rem; font-size: 1.0675rem;}
+.size-1-5     { line-height: 1.50rem; font-size: 1.365rem; }
+.size-2       { line-height: 2.00rem; font-size: 2rem; }
 
 /*
   Font-sizes that fit the viewport width.
