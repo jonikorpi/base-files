@@ -36,15 +36,15 @@ html {
 .size-2       { line-height: 2.00rem; font-size: 2rem; }
 
 /*
-  Font-sizes that fit the viewport width.
+  Font-sizes that fit the viewport.
   Awesome on large screens yet still readable at 320px.
   Adjust the line-heights to suit your font. */
 
-.size-fit-1 { line-height: 1.333; font-size: 3.6vw; }
-.size-fit-2 { line-height: 1.333; font-size: 4.7vw; }
-.size-fit-3 { line-height: 1.200; font-size: 6.6vw; }
-.size-fit-4 { line-height: 1.000; font-size: 8.4vw; }
-.size-fit-5 { line-height: 0.965; font-size: 12vw;  }
+.size-fit-1 { line-height: 1.333; font-size: calc(1.80vw + 1.80vh + 0.90vmin); }
+.size-fit-2 { line-height: 1.333; font-size: calc(2.35vw + 2.35vh + 1.18vmin); }
+.size-fit-3 { line-height: 1.200; font-size: calc(3.30vw + 3.30vh + 1.65vmin); }
+.size-fit-4 { line-height: 1.000; font-size: calc(4.20vw + 4.20vh + 2.10vmin); }
+.size-fit-5 { line-height: 0.965; font-size: calc(6.00vw + 6.00vh + 3.00vmin); }
 
 /*
   A grid overlay for the baseline grid */
