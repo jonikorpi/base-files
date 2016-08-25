@@ -158,6 +158,8 @@ html {
 
 .bg-currentcolor     { background-color: currentcolor; }
 .border-currentcolor { border-color:     currentcolor; }
+.fill-currentcolor   { fill:             currentcolor; }
+.stroke-currentcolor { stroke:           currentcolor; }
 
 /*
   Entry animations
