@@ -341,6 +341,10 @@
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+.word-break {
+  word-break: break-word;
+}
+
 /*
   Blocks */
 
