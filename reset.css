@@ -40,11 +40,12 @@ video, audio, canvas {
 /*
   Hides things that should be hidden */
 
+.hidden,
 [hidden],
 template,
 audio:not([controls]) {
-  display: none;
-  height: 0;
+  display: none !important;
+  height: 0 !important;
 }
 
 /*
