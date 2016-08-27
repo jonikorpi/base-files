@@ -162,28 +162,6 @@ html {
 .stroke-currentcolor { stroke:           currentcolor; }
 
 /*
-  Entry animations
-  (Played once when the element appears in the DOM.) */
-
-.enter-zoom {
-  animation: enter-zoom 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
-}
-
-@keyframes enter-zoom {
-  0%   { transform: scale(0); }
-  100% { transform: scale(1); }
-}
-
-.enter-fade {
-  animation: enter-fade 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
-}
-
-@keyframes enter-fade {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/*
   Base styles
   and things easily forgotten */
 
@@ -208,6 +186,41 @@ body {
 
 ::placeholder {
 
+}
+
+/*
+  Entry animations
+  (Played once when the element appears in the DOM.) */
+
+.enter-zoom {
+  animation: enter-zoom 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+
+@keyframes enter-zoom {
+  0%   { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.enter-fade {
+  animation: enter-fade 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+
+@keyframes enter-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*
+  Spinner animation
+  Useful for loading indicators */
+
+.spin {
+  animation: spin 1230ms linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /*-------------------------------------------*/
