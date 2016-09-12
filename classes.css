@@ -157,8 +157,8 @@
 .child-borders-y-4     > * + * { border-top: 4rem solid; }
 .child-borders-y-5     > * + * { border-top: 5rem solid; }
 
-.child-borders-x > * + * { border-left-width: 1px; }
-.child-borders-y > * + * { border-top-width:  1px; }
+.child-borders-x > * + * { border-left: 1px solid; }
+.child-borders-y > * + * { border-top:  1px solid; }
 
 /*
   Paddings, used like this:
