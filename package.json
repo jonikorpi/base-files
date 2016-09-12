@@ -9,6 +9,7 @@
   "style": [
     "reset.css",
     "classes.css",
+    "colors.css",
     "main.css"
   ],
   "author": "@jonikorpi",

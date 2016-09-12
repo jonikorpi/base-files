@@ -12,10 +12,12 @@
 - [Tachyons](http://tachyons.io/)-inspired classes for paddings and margins, aligned to a 1rem baseline grid.
 - Entry animation classes (played once when the element is added to the DOM).
 
+### colors.css (project-specific)
+- A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
+
 ### main.css (project-specific)
 - Typography classes for body text and UI elements: aligned to [a slightly flexing](http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010) 1rem baseline grid. Readable and useful at all screen widths above 320px.
 - Typography classes for massive headings and such: scaled to always fit the screen width, but still readable at 320px.
-- A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
 - Some easy-to-forget things you should always set, like `::selection`.
 
 ### index.html
