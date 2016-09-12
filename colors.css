@@ -93,16 +93,17 @@
 
 /* Other */
 
-.color-none  { color:            none; }
-.bg-none     { background-color: none; }
-.border-none { border-color:     none; }
-.fill-none   { fill:             none; }
-.stroke-none { stroke:           none; }
-.outline-none{ outline:          none; }
+.color-none   { color:            none; }
+.bg-none      { background-color: none; }
+.border-none  { border-color:     none; }
+.fill-none    { fill:             none; }
+.stroke-none  { stroke:           none; }
+.outline-none { outline:          none; }
 
-.color-transparent  { color:            transparent; }
-.bg-transparent     { background-color: transparent; }
-.border-transparent { border-color:     transparent; }
+.color-transparent   { color:            transparent; }
+.bg-transparent      { background-color: transparent; }
+.border-transparent  { border-color:     transparent; }
+.outline-transparent { outline-color:    transparent; }
 
 .color-inherit   { color:            inherit; }
 .bg-inherit      { background-color: inherit; }
