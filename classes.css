@@ -130,14 +130,32 @@
 .child-margins-y > * + * { margin-top:  1px; }
 
 /*
-  Automatical borders around child elements */
+  Automatical borders around child elements
+  (aligned to a 1rem baseline grid) */
 
-.child-borders   > *,
-.child-borders-x > *,
-.child-borders-y > * { border: 0 solid; }
+.child-borders-x-0-125 > * + * { border-left: 0.125rem solid; }
+.child-borders-x-0-25  > * + * { border-left: 0.25rem solid; }
+.child-borders-x-0-5   > * + * { border-left: 0.5rem solid; }
+.child-borders-x-0-75  > * + * { border-left: 0.75rem solid; }
+.child-borders-x-1     > * + * { border-left: 1rem solid; }
+.child-borders-x-1-25  > * + * { border-left: 1.25rem solid; }
+.child-borders-x-1-5   > * + * { border-left: 1.5rem solid; }
+.child-borders-x-2     > * + * { border-left: 2rem solid; }
+.child-borders-x-3     > * + * { border-left: 3rem solid; }
+.child-borders-x-4     > * + * { border-left: 4rem solid; }
+.child-borders-x-5     > * + * { border-left: 5rem solid; }
 
-.child-borders         { border: 0 solid; border-width: 1px 0 0 1px; }
-.child-borders > * + * { border-width: 0 1px 1px 0; }
+.child-borders-y-0-125 > * + * { border-top: 0.125rem solid; }
+.child-borders-y-0-25  > * + * { border-top: 0.25rem solid; }
+.child-borders-y-0-5   > * + * { border-top: 0.5rem solid; }
+.child-borders-y-0-75  > * + * { border-top: 0.75rem solid; }
+.child-borders-y-1     > * + * { border-top: 1rem solid; }
+.child-borders-y-1-25  > * + * { border-top: 1.25rem solid; }
+.child-borders-y-1-5   > * + * { border-top: 1.5rem solid; }
+.child-borders-y-2     > * + * { border-top: 2rem solid; }
+.child-borders-y-3     > * + * { border-top: 3rem solid; }
+.child-borders-y-4     > * + * { border-top: 4rem solid; }
+.child-borders-y-5     > * + * { border-top: 5rem solid; }
 
 .child-borders-x > * + * { border-left-width: 1px; }
 .child-borders-y > * + * { border-top-width:  1px; }
@@ -226,7 +244,8 @@
 .margin-left-0   { margin-left: 0; }
 
 /*
-  Borders */
+  Borders
+  (aligned to a 1rem baseline grid) */
 
 .border       { border: 1px solid; }
 .border-0-125 { border: 0.125rem solid; }
@@ -241,11 +260,6 @@
 .border-4     { border: 4rem solid; }
 .border-5     { border: 5rem solid; }
 
-.border-left   { border-left:   1px solid; }
-.border-top    { border-top:    1px solid; }
-.border-right  { border-right:  1px solid; }
-.border-bottom { border-bottom: 1px solid; }
-
 .border-x { border-top-width:  0; border-bottom-width: 0; }
 .border-y { border-left-width: 0; border-right-width:  0; }
 
@@ -258,7 +272,8 @@
 .dashed { border-style: dashed; }
 
 /*
-  Outlines */
+  Outlines
+  (aligned to a 1rem baseline grid) */
 
 .outline          { outline: 1px solid; }
 .outline-0-125    { outline: 0.125rem solid; }
