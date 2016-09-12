@@ -162,11 +162,14 @@
 
 /*
   Paddings, used like this:
-  .padding-1
-  .padding-1.padding-x
-  .padding-1.padding-top
+  .padding-1 = padding on all sides
+  .padding-1.padding-x = only left/right padding
+  .padding-1.padding-top = only top padding
+  .padding-1.padding-top-0 = no top padding
+
   If you want different sized paddings on the same element,
-  use another element as a wrapper.
+  use another element as a wrapper or write custom CSS.
+
   (aligned to a 1rem baseline grid) */
 
 .padding { padding: 1px; }
