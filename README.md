@@ -28,6 +28,7 @@
 ```html
 <link rel="stylesheet" href="reset.css"/>
 <link rel="stylesheet" href="classes.css"/>
+<link rel="stylesheet" href="colors.css"/>
 <link rel="stylesheet" href="main.css"/>
 ```
 
@@ -42,6 +43,7 @@ In index.js:
 ```js
 import "jonikorpi-base-files/reset.css";
 import "jonikorpi-base-files/classes.css";
+import "jonikorpi-base-files/colors.css";
 import "jonikorpi-base-files/main.css";
 ```
 
