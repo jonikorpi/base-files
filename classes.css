@@ -278,21 +278,39 @@
   Outlines
   (aligned to a 1rem baseline grid) */
 
-.outline          { outline: 1px solid; }
-.outline-0-125    { outline: 0.125rem solid; }
-.outline-0-25     { outline: 0.25rem solid; }
-.outline-0-5      { outline: 0.5rem solid; }
-.outline-0-75     { outline: 0.75rem solid; }
-.outline-1        { outline: 1rem solid; }
-.outline-1-25     { outline: 1.25rem solid; }
-.outline-1-5      { outline: 1.5rem solid; }
-.outline-2        { outline: 2rem solid; }
-.outline-3        { outline: 3rem solid; }
-.outline-4        { outline: 4rem solid; }
-.outline-5        { outline: 5rem solid; }
+.outline       { outline: 1px solid; }
+.outline-0-125 { outline: 0.125rem solid; }
+.outline-0-25  { outline: 0.25rem solid; }
+.outline-0-5   { outline: 0.5rem solid; }
+.outline-0-75  { outline: 0.75rem solid; }
+.outline-1     { outline: 1rem solid; }
+.outline-1-25  { outline: 1.25rem solid; }
+.outline-1-5   { outline: 1.5rem solid; }
+.outline-2     { outline: 2rem solid; }
+.outline-3     { outline: 3rem solid; }
+.outline-4     { outline: 4rem solid; }
+.outline-5     { outline: 5rem solid; }
 
 .dotted-outline { outline-style: dotted; }
 .dashed-outline { outline-style: dashed; }
+
+/*
+  Border-radius
+  (aligned to a 1rem baseline grid) */
+
+.round   { border-radius: 50%; }
+
+.rounded-0-125 { border-radius: 0.125rem; }
+.rounded-0-25  { border-radius: 0.25rem; }
+.rounded-0-5   { border-radius: 0.5rem; }
+.rounded-0-75  { border-radius: 0.75rem; }
+.rounded-1     { border-radius: 1rem; }
+.rounded-1-25  { border-radius: 1.25rem; }
+.rounded-1-5   { border-radius: 1.5rem; }
+.rounded-2     { border-radius: 2rem; }
+.rounded-3     { border-radius: 3rem; }
+.rounded-4     { border-radius: 4rem; }
+.rounded-5     { border-radius: 5rem; }
 
 /*
   Text alignments */
@@ -398,4 +416,3 @@
 .inline       { display: inline; }
 .block        { display: block; }
 .inline-block { display: inline-block; }
-.round        { border-radius: 50%; }
