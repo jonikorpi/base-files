@@ -88,8 +88,8 @@
 .child-margins-y-4     > * + * { margin-top: 4rem; }
 .child-margins-y-5     > * + * { margin-top: 5rem; }
 
-.child-margins-x > * + * { margin-left: 1px; }
-.child-margins-y > * + * { margin-top:  1px; }
+.child-margins-x-hairline > * + * { margin-left: 1px; }
+.child-margins-y-hairline > * + * { margin-top:  1px; }
 
 /*
   Automatical borders around child elements
@@ -123,8 +123,8 @@
 .child-borders-y-4     > * + * { border-top: 4rem solid; }
 .child-borders-y-5     > * + * { border-top: 5rem solid; }
 
-.child-borders-x > * + * { border-left: 1px solid; }
-.child-borders-y > * + * { border-top:  1px solid; }
+.child-borders-x-hairline > * + * { border-left: 1px solid; }
+.child-borders-y-hairline > * + * { border-top:  1px solid; }
 
 /*
   Misc useful classes */
