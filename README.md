@@ -9,8 +9,7 @@
 ### classes.css (non-project-specific)
 - Flexbox-classes that try to make sense of its weird syntax.
 - Magical [owl selector](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) classes for automatically adding margins between and borders around child elements.
-- [Tachyons](http://tachyons.io/)-inspired classes for paddings and margins, aligned to a 1rem baseline grid.
-- Entry animation classes (played once when the element is added to the DOM).
+- Classes that encapsulate various commonly used chunks of CSS that are annoying to type over and over again.
 
 ### colors.css (project-specific)
 - A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
