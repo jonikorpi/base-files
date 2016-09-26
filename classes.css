@@ -57,48 +57,6 @@
 .self-baseline { align-self: baseline; }
 
 /*
-  Widths and heights
-  (aligned to a 1rem baseline grid) */
-
-.width-100       { width: 100%; }
-.min-width-100   { min-width: 100%; }
-.width-auto      { width: auto; }
-.width-100vw     { width: 100vw; }
-.min-width-100vw { min-width: 100vw; }
-.width           { width: 1px; }
-
-.width-0-125 { width: 0.125rem; }
-.width-0-25  { width: 0.25rem; }
-.width-0-5   { width: 0.5rem; }
-.width-0-75  { width: 0.75rem; }
-.width-1     { width: 1rem; }
-.width-1-25  { width: 1.25rem; }
-.width-1-5   { width: 1.5rem; }
-.width-2     { width: 2rem; }
-.width-3     { width: 3rem; }
-.width-4     { width: 4rem; }
-.width-5     { width: 5rem; }
-
-.height-100       { height: 100%; }
-.min-height-100   { min-height: 100%; }
-.height-auto      { height: auto; }
-.height-100vh     { height: 100vh; }
-.min-height-100vh { min-height: 100vh; }
-.height           { height: 1px; }
-
-.height-0-125 { height: 0.125rem; }
-.height-0-25  { height: 0.25rem; }
-.height-0-5   { height: 0.5rem; }
-.height-0-75  { height: 0.75rem; }
-.height-1     { height: 1rem; }
-.height-1-25  { height: 1.25rem; }
-.height-1-5   { height: 1.5rem; }
-.height-2     { height: 2rem; }
-.height-3     { height: 3rem; }
-.height-4     { height: 4rem; }
-.height-5     { height: 5rem; }
-
-/*
   Automatical margins between child elements
   (aligned to a 1rem baseline grid) */
 
@@ -106,9 +64,11 @@
 .child-margins-x-0-25  > * + * { margin-left: 0.25rem; }
 .child-margins-x-0-5   > * + * { margin-left: 0.5rem; }
 .child-margins-x-0-75  > * + * { margin-left: 0.75rem; }
+.child-margins-x-0-875 > * + * { margin-left: 0.875rem; }
 .child-margins-x-1     > * + * { margin-left: 1rem; }
 .child-margins-x-1-25  > * + * { margin-left: 1.25rem; }
 .child-margins-x-1-5   > * + * { margin-left: 1.5rem; }
+.child-margins-x-1-75  > * + * { margin-left: 1.75rem; }
 .child-margins-x-2     > * + * { margin-left: 2rem; }
 .child-margins-x-3     > * + * { margin-left: 3rem; }
 .child-margins-x-4     > * + * { margin-left: 4rem; }
@@ -118,9 +78,11 @@
 .child-margins-y-0-25  > * + * { margin-top: 0.25rem; }
 .child-margins-y-0-5   > * + * { margin-top: 0.5rem; }
 .child-margins-y-0-75  > * + * { margin-top: 0.75rem; }
+.child-margins-y-0-875 > * + * { margin-top: 0.875rem; }
 .child-margins-y-1     > * + * { margin-top: 1rem; }
 .child-margins-y-1-25  > * + * { margin-top: 1.25rem; }
 .child-margins-y-1-5   > * + * { margin-top: 1.5rem; }
+.child-margins-y-1-75  > * + * { margin-top: 1.75rem; }
 .child-margins-y-2     > * + * { margin-top: 2rem; }
 .child-margins-y-3     > * + * { margin-top: 3rem; }
 .child-margins-y-4     > * + * { margin-top: 4rem; }
@@ -137,9 +99,11 @@
 .child-borders-x-0-25  > * + * { border-left: 0.25rem solid; }
 .child-borders-x-0-5   > * + * { border-left: 0.5rem solid; }
 .child-borders-x-0-75  > * + * { border-left: 0.75rem solid; }
+.child-borders-x-0-875 > * + * { border-left: 0.875rem solid; }
 .child-borders-x-1     > * + * { border-left: 1rem solid; }
 .child-borders-x-1-25  > * + * { border-left: 1.25rem solid; }
 .child-borders-x-1-5   > * + * { border-left: 1.5rem solid; }
+.child-borders-x-1-75  > * + * { border-left: 1.75rem solid; }
 .child-borders-x-2     > * + * { border-left: 2rem solid; }
 .child-borders-x-3     > * + * { border-left: 3rem solid; }
 .child-borders-x-4     > * + * { border-left: 4rem solid; }
@@ -149,9 +113,11 @@
 .child-borders-y-0-25  > * + * { border-top: 0.25rem solid; }
 .child-borders-y-0-5   > * + * { border-top: 0.5rem solid; }
 .child-borders-y-0-75  > * + * { border-top: 0.75rem solid; }
+.child-borders-y-0-875 > * + * { border-top: 0.875rem solid; }
 .child-borders-y-1     > * + * { border-top: 1rem solid; }
 .child-borders-y-1-25  > * + * { border-top: 1.25rem solid; }
 .child-borders-y-1-5   > * + * { border-top: 1.5rem solid; }
+.child-borders-y-1-75  > * + * { border-top: 1.75rem solid; }
 .child-borders-y-2     > * + * { border-top: 2rem solid; }
 .child-borders-y-3     > * + * { border-top: 3rem solid; }
 .child-borders-y-4     > * + * { border-top: 4rem solid; }
@@ -161,156 +127,19 @@
 .child-borders-y > * + * { border-top:  1px solid; }
 
 /*
-  Paddings, used like this:
-  .padding-1 = padding on all sides
-  .padding-1.padding-x = only left/right padding
-  .padding-1.padding-top = only top padding
-  .padding-1.padding-top-0 = no top padding
-
-  If you want different sized paddings on the same element,
-  use another element as a wrapper or write custom CSS.
-
-  (aligned to a 1rem baseline grid) */
-
-.padding { padding: 1px; }
-
-.padding-0-125 { padding: 0.125rem; }
-.padding-0-25  { padding: 0.25rem; }
-.padding-0-5   { padding: 0.5rem; }
-.padding-0-75  { padding: 0.75rem; }
-.padding-1     { padding: 1rem; }
-.padding-1-25  { padding: 1.25rem; }
-.padding-1-5   { padding: 1.5rem; }
-.padding-2     { padding: 2rem; }
-.padding-3     { padding: 3rem; }
-.padding-4     { padding: 4rem; }
-.padding-5     { padding: 5rem; }
-
-.padding-top    { padding-right: 0; padding-bottom: 0; padding-left:   0; }
-.padding-right  { padding-top:   0; padding-bottom: 0; padding-left:   0; }
-.padding-bottom { padding-top:   0; padding-right:  0; padding-left:   0; }
-.padding-left   { padding-top:   0; padding-right:  0; padding-bottom: 0; }
-
-.padding-x { padding-top:  0; padding-bottom: 0; }
-.padding-y { padding-left: 0; padding-right:  0; }
-
-.padding-top-0    { padding-top: 0; }
-.padding-right-0  { padding-right: 0; }
-.padding-bottom-0 { padding-bottom: 0; }
-.padding-left-0   { padding-left: 0; }
-
-/*
-  Margins, used the same as paddings (see above).
-  (aligned to a 1rem baseline grid) */
+  Misc useful classes */
 
 .margin-auto   { margin: auto; }
 .margin-auto-x { margin-left: auto; margin-right: auto; }
 .margin-auto-y { margin-top: auto; margin-bottom: auto; }
 
-.margin { margin: 1px; }
-
-.margin-0-125 { margin: 0.125rem; }
-.margin-0-25  { margin: 0.25rem; }
-.margin-0-5   { margin: 0.5rem; }
-.margin-0-75  { margin: 0.75rem; }
-.margin-1     { margin: 1rem; }
-.margin-1-25  { margin: 1.25rem; }
-.margin-1-5   { margin: 1.5rem; }
-.margin-2     { margin: 2rem; }
-.margin-3     { margin: 3rem; }
-.margin-4     { margin: 4rem; }
-.margin-5     { margin: 5rem; }
-
-.negative-margin-0-125 { margin: -0.125rem; }
-.negative-margin-0-25  { margin: -0.25rem; }
-.negative-margin-0-5   { margin: -0.5rem; }
-.negative-margin-0-75  { margin: -0.75rem; }
-.negative-margin-1     { margin: -1rem; }
-.negative-margin-1-25  { margin: -1.25rem; }
-.negative-margin-1-5   { margin: -1.5rem; }
-.negative-margin-2     { margin: -2rem; }
-.negative-margin-3     { margin: -3rem; }
-.negative-margin-4     { margin: -4rem; }
-.negative-margin-5     { margin: -5rem; }
-
-.margin-top    { margin-right: 0; margin-bottom: 0; margin-left:   0; }
-.margin-right  { margin-top:   0; margin-bottom: 0; margin-left:   0; }
-.margin-bottom { margin-top:   0; margin-right:  0; margin-left:   0; }
-.margin-left   { margin-top:   0; margin-right:  0; margin-bottom: 0; }
-
-.margin-x { margin-top:  0; margin-bottom: 0; }
-.margin-y { margin-left: 0; margin-right:  0; }
-
-.margin-top-0    { margin-top: 0; }
-.margin-right-0  { margin-right: 0; }
-.margin-bottom-0 { margin-bottom: 0; }
-.margin-left-0   { margin-left: 0; }
-
-/*
-  Borders
-  (aligned to a 1rem baseline grid) */
-
-.border       { border: 1px solid; }
-.border-0-125 { border: 0.125rem solid; }
-.border-0-25  { border: 0.25rem solid; }
-.border-0-5   { border: 0.5rem solid; }
-.border-0-75  { border: 0.75rem solid; }
-.border-1     { border: 1rem solid; }
-.border-1-25  { border: 1.25rem solid; }
-.border-1-5   { border: 1.5rem solid; }
-.border-2     { border: 2rem solid; }
-.border-3     { border: 3rem solid; }
-.border-4     { border: 4rem solid; }
-.border-5     { border: 5rem solid; }
-
-.border-x { border-top-width:  0; border-bottom-width: 0; }
-.border-y { border-left-width: 0; border-right-width:  0; }
-
-.border-top-0    { border-top-width: 0; }
-.border-right-0  { border-right-width: 0; }
-.border-bottom-0 { border-bottom-width: 0; }
-.border-left-0   { border-left-width: 0; }
-
 .dotted { border-style: dotted; }
 .dashed { border-style: dashed; }
-
-/*
-  Outlines
-  (aligned to a 1rem baseline grid) */
-
-.outline       { outline: 1px solid; }
-.outline-0-125 { outline: 0.125rem solid; }
-.outline-0-25  { outline: 0.25rem solid; }
-.outline-0-5   { outline: 0.5rem solid; }
-.outline-0-75  { outline: 0.75rem solid; }
-.outline-1     { outline: 1rem solid; }
-.outline-1-25  { outline: 1.25rem solid; }
-.outline-1-5   { outline: 1.5rem solid; }
-.outline-2     { outline: 2rem solid; }
-.outline-3     { outline: 3rem solid; }
-.outline-4     { outline: 4rem solid; }
-.outline-5     { outline: 5rem solid; }
 
 .dotted-outline { outline-style: dotted; }
 .dashed-outline { outline-style: dashed; }
 
-/*
-  Border-radius
-  (aligned to a 1rem baseline grid) */
-
-.round   { border-radius: 50%; }
-
-.rounded-0-125 { border-radius: 0.125rem; }
-.rounded-0-25  { border-radius: 0.25rem; }
-.rounded-0-5   { border-radius: 0.5rem; }
-.rounded-0-75  { border-radius: 0.75rem; }
-.rounded-1     { border-radius: 1rem; }
-.rounded-1-25  { border-radius: 1.25rem; }
-.rounded-1-5   { border-radius: 1.5rem; }
-.rounded-2     { border-radius: 2rem; }
-.rounded-3     { border-radius: 3rem; }
-.rounded-4     { border-radius: 4rem; }
-.rounded-5     { border-radius: 5rem; }
+.round { border-radius: 50%; }
 
 /*
   Text alignments */
