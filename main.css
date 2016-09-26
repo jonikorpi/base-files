@@ -47,7 +47,8 @@ html {
 .size-fit-5 { line-height: 0.965; font-size: calc(6.00vw + 6.00vh + 3.00vmin); }
 
 /*
-  A grid overlay for the baseline grid */
+  A grid overlay for the baseline grid
+  Try giving your <html> or <body> this class. */
 
 .grid-overlay {
   background-image:
