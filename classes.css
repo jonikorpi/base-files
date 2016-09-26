@@ -127,36 +127,6 @@
 .child-borders-y-hairline > * + * { border-top:  1px solid; }
 
 /*
-  Misc useful classes */
-
-.margin-auto   { margin: auto; }
-.margin-auto-x { margin-left: auto; margin-right: auto; }
-.margin-auto-y { margin-top: auto; margin-bottom: auto; }
-
-.round { border-radius: 50%; }
-
-/*
-  Floats
-  (Hopefully these are no longer needed) */
-
-.float-left  { float: left;  }
-.float-right { float: right; }
-
-.clear-left  { clear: left;  }
-.clear-right { clear: right; }
-.clear-both  { clear: both;  }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*
   Useful position classes */
 
 .position-all    { position: absolute; left: 0; top:    0; right:  0; margin: auto; bottom: 0; }
@@ -189,17 +159,6 @@
 .user-select    { user-select: none; }
 
 /*
-  Useful typography classes */
-
-.all-caps   { text-transform: uppercase;  }
-.bold       { font-weight: bold; }
-.italic     { font-style: italic; }
-
-.underlined {
-  border-bottom: 1px solid;
-}
-
-/*
   Overflow */
 
 .nowrap {
@@ -227,8 +186,22 @@
 }
 
 /*
-  Blocks */
+  Misc classes for bits of annoying-to-type CSS */
 
-.inline       { display: inline; }
-.block        { display: block; }
-.inline-block { display: inline-block; }
+.margin-auto   { margin: auto; }
+.margin-auto-x { margin-left: auto; margin-right: auto;  }
+.margin-auto-y { margin-top: auto;  margin-bottom: auto; }
+
+.all-caps   { text-transform: uppercase; }
+
+.round { border-radius: 50%; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
