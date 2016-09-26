@@ -11,13 +11,17 @@
 - Magical [owl selector](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) classes for automatically adding margins between and borders around child elements.
 - Classes that encapsulate various commonly used chunks of CSS that are annoying to type over and over again.
 
-### colors.css (project-specific)
-- A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
-
 ### main.css (project-specific)
 - Typography classes for body text and UI elements: aligned to [a slightly flexing](http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010) 1rem baseline grid. Readable and useful at all screen widths above 320px.
 - Typography classes for massive headings and such: scaled to always fit the screen width, but still readable at 320px.
 - Some easy-to-forget things you should always set, like `::selection`.
+
+### colors.css (project-specific)
+- A basic color scheme created with awesome data scientist color pickers: [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) and [HCL Picker](http://tristen.ca/hcl-picker/).
+
+### animations.css (project-specific)
+- Useful animation presets for making elements appear via zoom or fade.
+- Easy-to-use spinner animation.
 
 ### index.html
 - A plain typography test for the all the CSS mentioned above.
@@ -28,6 +32,7 @@
 <link rel="stylesheet" href="reset.css"/>
 <link rel="stylesheet" href="classes.css"/>
 <link rel="stylesheet" href="colors.css"/>
+<link rel="stylesheet" href="animations.css"/>
 <link rel="stylesheet" href="main.css"/>
 ```
 
@@ -43,13 +48,14 @@ In index.js:
 import "jonikorpi-base-files/reset.css";
 import "jonikorpi-base-files/classes.css";
 import "jonikorpi-base-files/colors.css";
+import "jonikorpi-base-files/animations.css";
 import "jonikorpi-base-files/main.css";
 ```
 
-You'll probably want to edit main.css, though, so I guess you'll have to make a copy of it in your app and import that instead.
+You'll probably want to edit main.css though, so you'll have to make a copy of it in your app and import that instead.
 
 ## Things to note:
-- The primary idea is to avoid having to touch CSS files to style new things. `<header class="position-top fixed padding-1 color-5 bg-1 child-margins-x-1">` instead of `<header class="masthead">`.
+- The primary idea is to avoid having to touch CSS files to style new things. `<header class="position-top fixed color-5 bg-1 child-margins-x-1">` instead of `<header class="masthead">`.
 - The secondary idea is to avoid having to write media queries. The flexing baseline grid and the typography presets help with this a lot.
-- This CSS is terrible without some sort of templating/component system like React. Without one you'll end up copy-pasting class names a lot.
+- This CSS is terrible without some sort of template/component system like React. Without one you'll end up copy-pasting class names a lot.
 - The CSS assumes it gets run through [autoprefixer](https://github.com/postcss/autoprefixer).

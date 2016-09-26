@@ -1,0 +1,80 @@
+/*
+  Entry animations
+  (Played once when the element appears in the DOM.) */
+
+.enter-zoom {
+  animation: enter-zoom 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-zoom {
+  0%   { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.enter-zoom-x {
+  animation: enter-zoom-x 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-zoom-x {
+  0%   { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.enter-zoom-y {
+  animation: enter-zoom-y 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-zoom-y {
+  0%   { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+
+.enter-from-above {
+  animation: enter-from-above 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-from-above {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(0%); }
+}
+
+.enter-from-below {
+  animation: enter-from-below 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-from-below {
+  0%   { transform: translateY(100%); }
+  100% { transform: translateY(0%); }
+}
+
+.enter-from-left {
+  animation: enter-from-left 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-from-left {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+.enter-from-right {
+  animation: enter-from-right 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-from-right {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
+
+.enter-fade {
+  animation: enter-fade 200ms cubic-bezier(0.236, 0.000, 0.236, 1.000);
+}
+@keyframes enter-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*
+  Spinner animation
+  Useful for loading indicators. */
+
+.spin {
+  animation: spin 1230ms linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
