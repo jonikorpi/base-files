@@ -78,12 +78,6 @@ html {
   /*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
 }
 
-body {
-  max-width: 100%;
-  overflow: hidden;
-  overflow-y: visible;
-}
-
 ::selection {
 
 }
