@@ -1,0 +1,23 @@
+@charset "utf-8";
+@viewport {width: device-width;}
+
+/*
+  1 rem == baseline grid unit.
+  The calc() function flexes the baseline grid,
+  making everything automatically a bit bigger on larger screens,
+  as long as you set every font-size, line-height, margin, padding etc.
+  in rems.
+
+  Edit the em value to change the grid's base size,
+  but make sure the font-sizes still feel good on small screens.
+
+  Edit the vw/vh/vmin values to change how much the grid flexes,
+  but make sure your body text doesn't get huge in large viewports.
+
+  Details on the technique:
+  http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010 */
+
+html {
+  font-size: 133%; /* Fallback: used if browser doesn't support calc() */
+  font-size: calc(0.875em + 0.5vw + 0.5vh + 0.25vmin);
+}
