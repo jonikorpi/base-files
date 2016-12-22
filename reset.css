@@ -10,8 +10,10 @@
   color: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  text-size-adjust: 100%;
   text-decoration-skip: ink;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 ul ul, ul ol, ol ol, ol ul {
