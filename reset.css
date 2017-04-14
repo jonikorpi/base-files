@@ -113,7 +113,8 @@ button,
 }
 
 ::placeholder {
-  opacity: 0.618;
+  opacity: 1;
+  color: inherit;
 }
 
 button::-moz-focus-inner,
