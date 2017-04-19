@@ -165,7 +165,8 @@ th {
 a,
 button,
 input,
-textarea {
+textarea,
+select {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
