@@ -19,16 +19,8 @@
           text-size-adjust: 100%;
 }
 
-ul ul, ul ol, ol ol, ol ul {
+ul, ol {
   padding-left: 1rem;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-em, i {
-  font-style: italic;
 }
 
 /*
@@ -61,8 +53,8 @@ button,
 [type="submit"],
 [type="reset"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: none;
   border: none;
   border-radius: 0;
