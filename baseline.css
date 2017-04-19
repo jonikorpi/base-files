@@ -19,5 +19,10 @@
 
 html {
   font-size: 133%; /* Fallback: used if browser doesn't support calc() */
-  font-size: calc(0.875em + 0.5vw + 0.5vh + 0.25vmin);
+  font-size: calc(1.14em + 0.2vw + 0.2vh + 0.1vmin);
+}
+
+body {
+  line-height: 1rem;
+  font-size: 0.8rem; /* = line-height of 1.25 */
 }
