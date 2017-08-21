@@ -1,13 +1,19 @@
 {
   "name": "jonikorpi-base-files",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "CSS and HTML starter kit for new projects",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonikorpi/base-files.git"
   },
-  "style": ["globals.css", "reset.css"],
-  "files": ["globals.css", "reset.css"],
+  "style": [
+    "globals.css",
+    "reset.css"
+  ],
+  "files": [
+    "globals.css",
+    "reset.css"
+  ],
   "author": "@jonikorpi",
   "license": "MIT",
   "homepage": "https://github.com/jonikorpi/base-files#readme"
