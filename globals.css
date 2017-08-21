@@ -19,6 +19,19 @@
 html {
   font-size: 133%; /* Fallback: used if browser doesn't support calc() */
   font-size: calc(1.14em + 0.2vw + 0.2vh + 0.1vmin);
+
+  /* Colors and other variables often needed by CSS go here,
+     as a single source of truth, but still accessible
+     in components. */
+  --fontFamily: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --backgroundColor: black;
+  --color: white;
+
+  font-family: var(--fontFamily);
+  background-color: var(--backgroundColor);
+  color: var(--color);
 }
 
 body {

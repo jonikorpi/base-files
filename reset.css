@@ -148,12 +148,3 @@ canvas {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
-
-/*
-  System font family */
-
-html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-}
