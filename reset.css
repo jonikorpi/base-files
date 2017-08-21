@@ -128,7 +128,8 @@ a,
 button,
 input,
 textarea,
-select {
+select,
+label {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
