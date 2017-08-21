@@ -6,12 +6,8 @@
     "type": "git",
     "url": "git+https://github.com/jonikorpi/base-files.git"
   },
-  "style": [
-    "reset.css",
-    "classes.css",
-    "colors.css",
-    "main.css"
-  ],
+  "style": ["globals.css", "reset.css"],
+  "files": ["globals.css", "reset.css"],
   "author": "@jonikorpi",
   "license": "MIT",
   "homepage": "https://github.com/jonikorpi/base-files#readme"
