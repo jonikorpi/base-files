@@ -19,7 +19,7 @@
   text-decoration-skip: ink;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  border-radius: 0;
 }
 
 ul,
@@ -32,16 +32,13 @@ ol {
 
 article,
 aside,
-details,
 figcaption,
 figure,
 footer,
 header,
 main,
-menu,
 nav,
 section,
-summary,
 video,
 audio,
 canvas,
@@ -80,9 +77,6 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
-  border: none;
-  border-radius: 0;
   cursor: pointer;
   white-space: normal;
 }
@@ -141,11 +135,6 @@ table {
   min-width: 100%;
 }
 
-td,
-th {
-  text-align: left;
-}
-
 /*
   Removes touch input lag from tappable things */
 
@@ -154,7 +143,8 @@ button,
 input,
 textarea,
 select,
-label {
+label,
+canvas {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
