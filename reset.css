@@ -19,32 +19,8 @@
   text-decoration-skip: ink;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   border-radius: 0;
-}
-
-ul,
-ol {
-  padding-left: 1rem;
-}
-
-/*
-  HTML5 element and media display */
-
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-video,
-audio,
-canvas,
-img,
-svg {
-  display: block;
 }
 
 /*
@@ -54,24 +30,11 @@ a {
   background-color: transparent;
 }
 
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-}
-
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-
 /*
   Buttons and forms */
 
 button,
+[type="button"],
 [type="submit"],
 [type="reset"] {
   -webkit-appearance: none;
@@ -79,10 +42,6 @@ button,
   appearance: none;
   cursor: pointer;
   white-space: normal;
-}
-
-[disabled] {
-  cursor: not-allowed !important;
 }
 
 ::-webkit-input-placeholder {
@@ -121,18 +80,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 textarea {
-  overflow: auto;
   resize: vertical;
-  display: block;
-}
-
-/*
-  Tables */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  min-width: 100%;
 }
 
 /*
