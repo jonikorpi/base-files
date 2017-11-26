@@ -81,6 +81,7 @@ input[type="search"]::-webkit-search-decoration {
 
 textarea {
   resize: vertical;
+  display: block;
 }
 
 /*
