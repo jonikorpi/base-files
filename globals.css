@@ -17,6 +17,7 @@
   http://codepen.io/CrocoDillon/pen/jgmwt?editors=0010 */
 
 html {
+  font-display: optional;
   font-size: 133%; /* Fallback: used if browser doesn't support calc() */
   font-size: calc(1.14em + 0.2vw + 0.2vh + 0.1vmin);
 
