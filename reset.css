@@ -15,12 +15,17 @@
   color: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  border-radius: 0;
+}
+
+html {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  border-radius: 0;
 }
 
 /*
