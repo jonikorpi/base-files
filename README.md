@@ -26,7 +26,7 @@ If you have a container and need margins between its children, use `.margins-x` 
 
 On their own they'll create margins equal to `1rem`: `<div class="container margins-x">…</div>`. To adjust the size override their respective CSS variables: `<div class="container margins-y" style="--margins-y: 1rem;">…</div>`.
 
-You can use `.margin` and `.padding` similarly, to
+You can use `.margin` and `.padding` similarly, to quickly give a single element some padding or margin: `<div class="padding" style="--padding: 2rem;">…</div>`;
 
 ## flexbox.css
 
