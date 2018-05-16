@@ -1,13 +1,17 @@
 {
   "name": "jonikorpi-base-files",
-  "version": "8.2.0",
+  "version": "9.0.0",
   "description": "CSS starter kit for new projects",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonikorpi/base-files.git"
   },
-  "style": ["baseline.css, flexbox.css, forms.css, reset.css, spacing.css"],
-  "files": ["baseline.css, flexbox.css, forms.css, reset.css, spacing.css"],
+  "style": [
+    "baseline.css, flexbox.css, forms.css, reset.css, spacing.css"
+  ],
+  "files": [
+    "baseline.css, flexbox.css, forms.css, reset.css, spacing.css"
+  ],
   "author": "@jonikorpi",
   "license": "MIT",
   "homepage": "https://github.com/jonikorpi/base-files#readme"
