@@ -1,0 +1,35 @@
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid;
+}
+
+.button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.stripped-button {
+  padding: none;
+  border-radius: none;
+  border: none;
+  text-decoration: underline;
+}

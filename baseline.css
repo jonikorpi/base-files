@@ -1,0 +1,17 @@
+html {
+  --baselineSize: 1.14em;
+  --baselineScaling: 0.2;
+  --baselineFallback: calc(var(--baselineSize) * (1 + var(--baselineScaling)));
+
+  font-display: optional;
+  font-size: var(--baselineFallback);
+  font-size: calc(
+    var(--baselineSize) + (var(--baselineScaling) * 1vw) +
+      (var(--baselineScaling) * 1vh) + (var(--baselineScaling) / 2vmin)
+  );
+}
+
+body {
+  line-height: 1rem;
+  font-size: 0.8rem;
+}

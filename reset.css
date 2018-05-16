@@ -26,6 +26,19 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
 }
 
 /*
@@ -33,6 +46,10 @@ html {
 
 a {
   background-color: transparent;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*
@@ -50,23 +67,28 @@ button,
 }
 
 ::-webkit-input-placeholder {
-  opacity: 1;
+  opacity: 0.618;
   color: inherit;
 }
 
 ::-moz-placeholder {
-  opacity: 1;
+  opacity: 0.618;
   color: inherit;
 }
 
 :-ms-input-placeholder {
-  opacity: 1;
+  opacity: 0.618;
   color: inherit;
 }
 
 ::placeholder {
-  opacity: 1;
+  opacity: 0.618;
   color: inherit;
+}
+
+:disabled {
+  opacity: 0.618;
+  cursor: not-allowed;
 }
 
 button::-moz-focus-inner,

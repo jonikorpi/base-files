@@ -1,0 +1,39 @@
+.margins-x {
+  --margins-x: 1rem;
+}
+.margins-x > * + * {
+  margin-left: var(--margins-x);
+}
+
+.margins-y {
+  --margins-y: 1rem;
+}
+.margins-y > * + * {
+  margin-left: var(--margins-y);
+}
+
+.padding {
+  --padding: 0.5rem;
+  --padding-x: var(--padding);
+  --padding-y: var(--padding);
+  --padding-left: var(--padding-x);
+  --padding-right: var(--padding-x);
+  --padding-top: var(--padding-y);
+  --padding-bottom: var(--padding-y);
+
+  padding: var(--padding-left) var(--padding-top) var(--padding-right)
+    var(--padding-bottom);
+}
+
+.margin {
+  --margin: 0.5rem;
+  --margin-x: var(--margin);
+  --margin-y: var(--margin);
+  --margin-left: var(--margin-x);
+  --margin-right: var(--margin-x);
+  --margin-top: var(--margin-y);
+  --margin-bottom: var(--margin-y);
+
+  margin: var(--margin-left) var(--margin-top) var(--margin-right)
+    var(--margin-bottom);
+}

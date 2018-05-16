@@ -1,0 +1,30 @@
+.flex,
+.flex-x {
+  display: flex;
+}
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify {
+  justify-content: space-between;
+}
+
+.even > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
