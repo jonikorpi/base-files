@@ -1,0 +1,18 @@
+@supports (top: max(1px, env(safe-area-inset-top))) {
+  .safe-all,
+  .safe-top {
+    margin-top: env(safe-area-inset-top);
+  }
+  .safe-all,
+  .safe-right {
+    margin-right: env(safe-area-inset-right);
+  }
+  .safe-all,
+  .safe-left {
+    margin-left: env(safe-area-inset-left);
+  }
+  .safe-all,
+  .safe-bottom {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+}

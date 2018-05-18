@@ -35,3 +35,7 @@ A couple of flexbox utility classes so that you don't have to keep writing them 
 ## forms.css
 
 `reset.css` destroys many default form element styles. This brings some of them back: bordered input fields and selects, slightly rounded buttons. (If needed, use `.fake-link` to revert the styles and make a button look like a link.)
+
+## safe-areas.css
+
+Classes that add margins equal to `env(safe-area-inset-right)` and so on, for use easy support of iPhone X and other non-rectangular devices.
