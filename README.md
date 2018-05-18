@@ -38,4 +38,4 @@ A couple of flexbox utility classes so that you don't have to keep writing them 
 
 ## safe-areas.css
 
-Classes that add margins equal to `env(safe-area-inset-right)` and so on, for use easy support of iPhone X and other non-rectangular devices.
+Classes that add margins equal to `env(safe-area-inset-right)` and so on, for implementing easy support of iPhone X and other non-rectangular devices.
