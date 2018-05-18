@@ -7,7 +7,12 @@
     "url": "git+https://github.com/jonikorpi/base-files.git"
   },
   "style": [
-    "baseline.css, flexbox.css, forms.css, reset.css, spacing.css"
+    "baseline.css",
+    "flexbox.css",
+    "forms.css",
+    "reset.css",
+    "safe-areas.css",
+    "spacing.css"
   ],
   "author": "@jonikorpi",
   "license": "MIT",
