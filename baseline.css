@@ -7,7 +7,7 @@ html {
   font-size: var(--baselineFallback);
   font-size: calc(
     var(--baselineSize) + (var(--baselineScaling) * 1vw) +
-      (var(--baselineScaling) * 1vh) + (var(--baselineScaling) / 2vmin)
+      (var(--baselineScaling) * 1vh) + ((var(--baselineScaling) / 2) * 1vmin)
   );
 }
 
