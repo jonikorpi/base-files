@@ -4,7 +4,7 @@ html {
   --baselineFallback: calc(var(--baselineSize) * (1 + var(--baselineScaling)));
 
   font-display: optional;
-  font-size: 150%;
+  font-size: 125%;
   font-size: var(--baselineFallback);
   font-size: calc(
     var(--baselineSize) + (var(--baselineScaling) * 1vw) +
