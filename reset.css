@@ -41,6 +41,11 @@ i {
   font-style: italic;
 }
 
+ol,
+ul {
+  list-style-position: inside;
+}
+
 /*
   Misc element fixes */
 
