@@ -129,3 +129,8 @@ canvas {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
+
+/* https://mobile.twitter.com/LeaVerou/status/1045768279753666562 */
+:focus:not(:focus-visible) {
+  outline: none;
+}
