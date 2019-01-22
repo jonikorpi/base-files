@@ -134,6 +134,6 @@ label {
   * {
     animation-duration: 0s !important;
     transition: none !important;
-    scroll-behavior: auto;
+    scroll-behavior: auto !important;
   }
 }
