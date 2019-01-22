@@ -120,8 +120,7 @@ button,
 input,
 textarea,
 select,
-label,
-canvas {
+label {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
