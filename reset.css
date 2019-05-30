@@ -18,8 +18,7 @@
 }
 
 html {
-  -webkit-text-decoration-skip: ink;
-  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
   -webkit-text-size-adjust: 100%;
