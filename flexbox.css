@@ -1,23 +1,23 @@
 .flex,
-.flex-x {
+.flexX {
   display: flex;
 }
-.flex-y {
+.flexY {
   display: flex;
   flex-direction: column;
 }
 
-.align-start {
+.alignStart {
   align-items: flex-start;
 }
-.align-center {
+.alignCenter {
   align-items: center;
 }
-.align-end {
+.alignEnd {
   align-items: flex-end;
 }
 
-.justify-center {
+.justifyCenter {
   justify-content: center;
 }
 .justify {
@@ -25,6 +25,13 @@
 }
 
 .even > * {
-  flex-basis: 0;
   flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+.grow {
+  flex-grow: 1;
+}
+.noShrink {
+  flex-shrink: 0;
 }
