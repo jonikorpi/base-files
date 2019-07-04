@@ -29,14 +29,17 @@ html {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-display: optional;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
 }
 
 strong,
 b {
   font-weight: bold;
+body {
+  font-size: 0.666666667rem;
+  line-height: 1rem;
 }
 
 em,
