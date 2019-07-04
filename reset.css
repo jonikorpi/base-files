@@ -147,3 +147,15 @@ label {
 [hidden] {
   display: none !important;
 }
+
+/* Nice default link styling */
+
+a,
+.link {
+  text-decoration: underline;
+}
+
+a:active,
+.link:active {
+  text-decoration-style: double;
+}
