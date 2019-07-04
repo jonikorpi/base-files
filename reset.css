@@ -8,9 +8,11 @@
 * {
   margin: 0;
   padding: 0;
-  border: none;
-  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   color: inherit;
+  border-color: currentcolor;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -64,6 +66,17 @@ img {
 
 /* Buttons and forms */
 
+input,
+textarea {
+  padding: 0.25rem 0.375rem;
+  border: 1px solid currentcolor;
+}
+
+input[type="color"] {
+  padding: initial;
+  border: initial;
+}
+
 button,
 [type="button"],
 [type="submit"],
@@ -73,21 +86,8 @@ button,
   appearance: none;
   cursor: pointer;
   white-space: normal;
-}
-
-::-webkit-input-placeholder {
-  opacity: 0.618;
-  color: inherit;
-}
-
-::-moz-placeholder {
-  opacity: 0.618;
-  color: inherit;
-}
-
-:-ms-input-placeholder {
-  opacity: 0.618;
-  color: inherit;
+  padding: 0;
+  border: none;
 }
 
 ::placeholder {
