@@ -81,6 +81,13 @@ textarea {
   border: 1px solid currentcolor;
 }
 
+input,
+button,
+textarea,
+select {
+  max-width: 100%;
+}
+
 input[type="color"] {
   padding: initial;
   border: initial;
