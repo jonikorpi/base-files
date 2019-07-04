@@ -8,13 +8,17 @@
 * {
   margin: 0;
   padding: 0;
-  background: none;
   border: none;
   font: inherit;
   color: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+}
+
+input,
+button {
   border-radius: 0;
+  background: none;
 }
 
 html {
