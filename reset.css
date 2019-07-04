@@ -3,7 +3,7 @@
   width: device-width;
 }
 
-/* Resets annoying things */
+/* Reset annoying things */
 
 * {
   margin: 0;
@@ -23,12 +23,12 @@ button {
   background: none;
 }
 
+/* Typography */
+
 html {
   text-decoration-skip-ink: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-display: optional;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif,
@@ -36,22 +36,31 @@ html {
   font-size: 150%;
 }
 
-strong,
-b {
-  font-weight: bold;
 body {
   font-size: 0.666666667rem;
   line-height: 1rem;
 }
 
-em,
-i {
-  font-style: italic;
+code {
+  font-family: Menlo, Monaco, "Courier New", Courier, monospace, monospace;
+  vertical-align: bottom; /* fixes 1px extra line-height */
+}
+
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+sub {
+  vertical-align: bottom;
+}
+sup {
+  vertical-align: top;
 }
 
 ol,
 ul {
-  list-style-position: inside;
+  padding-left: 1rem;
 }
 
 /* Misc element fixes */
@@ -120,7 +129,8 @@ textarea {
   display: block;
 }
 
-/* Removes touch input lag from tappable things */
+/* Remove touch input lag from tappable things */
+
 a,
 button,
 input,
@@ -132,17 +142,12 @@ label {
 }
 
 /* https://mobile.twitter.com/LeaVerou/status/1045768279753666562 */
+
 :focus:not(:focus-visible) {
   outline: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0s !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
-  }
-}
+/* Really hide hidden things */
 
 [hidden] {
   display: none !important;
